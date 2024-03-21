@@ -2,11 +2,13 @@
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import SplineAnimation from '../components/Spline.tsx';
+import { Icon } from 'astro-icon/components';
+
 
 ---
 
 <Layout title="Welcome to Astro.">
-	<main>
+	<main class="">
 		<!-- <div style="height: 100vh; width:100%; display: flex; 
 		align-items: center; justify-content: center;
 		 background: var(--background); " >
@@ -15,9 +17,6 @@ import SplineAnimation from '../components/Spline.tsx';
 		<h1>
 			Welcome to <span class="text-gradient">Astro</span>!
 		</h1>
-		<div>
-			<img class="astro-a" src="/compressed-gif.gif" alt="Astro logo" />
-		</div>
 		<h1>
 			Lorem ipsum dolor sit amet consectetur adipisicing elit.
 			 Cupiditate porro quibusdam modi culpa iusto odio quisquam quia dolor aliquid, reprehenderit ipsa sapiente, qui et. Quasi magni et cumque sunt velit.
@@ -98,7 +97,6 @@ import SplineAnimation from '../components/Spline.tsx';
 		padding: 0;
 	}
 </style>
-../components/Spline
 
 
 <script>
