@@ -4,9 +4,15 @@
 
 //import SplineAnimation from '../components/Spline';
 //import Loader from '../components/Loader.astro';
-import Navbar from '../components/Navbar.tsx';
+import React from 'react';
+import {Navbar} from '../components/Navbar.tsx';
+import Nav from '../components/Nav.tsx';
+import 'animate.css';
+import { Framer } from '../components/Framer';
+import { AnimatePresence, motion } from "framer-motion";
 
-import '../styles/main.css';
+
+import '../assets/css/main.css';
 
 interface Props {
 	title: string;
@@ -27,27 +33,28 @@ const { title } = Astro.props;
 	</head>
 	<body class = "landing">
 
-		<Navbar/>
-		
 		<div id="page-wrapper">
 				<!-- Header -->
 				<header id="header" class="alt ">
-					<!-- <Navbar/> -->
-					
-					
+					<!-- <Navbar/> -->				
+					<Navbar client:load />	
+							
+					<!-- <Nav client:load /> -->
 				</header>
 
 
 			<!-- Banner -->
 				<section id="banner">
 					<div class="inner">
-						<h2>Spectral</h2>
+						<!-- <h2>Spectral</h2>
+						<Framer client:load />
 						<p>Another fine responsive<br />
 						site template freebie<br />
 						crafted by <a href="http://html5up.net">HTML5 UP</a>.</p>
 						<ul class="actions">
-							<li><a href="#" class="button special">Activate</a></li>
+							<li><a href="#" class="button special ">Activate</a></li>
 						</ul>
+						 -->
 					</div>
 					<a href="#one" class="more scrolly">Learn More</a>
 				</section>
@@ -161,14 +168,20 @@ const { title } = Astro.props;
 						<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 				</footer>
-
 		</div>
-		
 	</body>
 </html>
 
 
 <style is:global>
+
+	@font-face {
+		font-family: 'Glancyr-Regular';
+		src: url('/fonts/Glancyr-Regular') format('otf');
+		font-weight: normal;
+		font-style: normal;
+		font-display: swap;
+	}
 
 	:root {
 		--accent: 136, 58, 234;
@@ -199,4 +212,17 @@ const { title } = Astro.props;
 			monospace;
 	}
 </style>
-../components/NavNav.js
+
+<script>
+	import Lenis from '@studio-freight/lenis';
+
+	const lenis = new Lenis()
+
+	function raf(time: number) {
+	lenis.raf(time)
+	requestAnimationFrame(raf)
+	}
+
+	requestAnimationFrame(raf)
+
+</script>

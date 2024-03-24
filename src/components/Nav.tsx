@@ -13,6 +13,7 @@ const Navbar = ( ) => {
   const [open, setOpen] = useState(false);
   const toggleMenu = () => {
     setOpen((prevOpen: Boolean) => !prevOpen);
+    console.log('CLICKED');
   };
   const menuVars = {
     initial: {
@@ -69,7 +70,7 @@ const Navbar = ( ) => {
            {"Contact"} 
         </div>
         <div
-          className="cursor-pointer  text-md text-white"
+          className="cursor-pointer lg:hidden text-md text-white"
           onClick={toggleMenu}>
           Menu
         </div>

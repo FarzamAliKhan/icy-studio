@@ -2,7 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import SplineAnimation from '../components/Spline.tsx';
-import { Icon } from 'astro-icon/components';
+import {Framer} from '../components/Framer.tsx';
 
 
 ---
@@ -17,6 +17,7 @@ import { Icon } from 'astro-icon/components';
 		<h1>
 			Welcome to <span class="text-gradient">Astro</span>!
 		</h1>
+		<Framer/>
 		<h1>
 			Lorem ipsum dolor sit amet consectetur adipisicing elit.
 			 Cupiditate porro quibusdam modi culpa iusto odio quisquam quia dolor aliquid, reprehenderit ipsa sapiente, qui et. Quasi magni et cumque sunt velit.
@@ -99,16 +100,3 @@ import { Icon } from 'astro-icon/components';
 </style>
 
 
-<script>
-	import Lenis from '@studio-freight/lenis';
-
-	const lenis = new Lenis()
-
-	function raf(time: number) {
-	lenis.raf(time)
-	requestAnimationFrame(raf)
-	}
-
-	requestAnimationFrame(raf)
-
-</script>
