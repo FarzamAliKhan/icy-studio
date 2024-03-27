@@ -9,11 +9,11 @@ import logo from '../images/ICY-LOGO-WITHOUT-TAGLINE.png';
 
 export const Navbar = () => {
 
-  const [menuOpen, setMenuOpen] = useState(false);
-
-
-  const close = () => setMenuOpen(false);
-  const open = () => setMenuOpen(true);
+  const [open, setOpen] = useState(false);
+    const toggleMenu = () => {
+    setOpen((prevOpen: Boolean) => !prevOpen);
+    console.log('CLICKED');
+    };
 
   return (
     <nav className="flex top-0 animate__animated animate__headShake animate__delay-12s  items-center justify-between py-2 sm:px-12 px-2 bg-transparent fixed w-full ">
@@ -32,9 +32,8 @@ export const Navbar = () => {
       
       <motion.div
           whileHover={{ scale: 1.1, scaleY: 1.1}}
-          whileTap={{ scale: 0.9, scaleY:0.9 }}
           className='save-button'
-          onClick={() => (menuOpen ? close() : open())}
+          onClick={toggleMenu}
       >
           <a href="#" className="cursor-hand ">
           <img
@@ -47,15 +46,11 @@ export const Navbar = () => {
       </motion.div>
 
       <AnimatePresence
-      
-        initial={false}
-
-        mode="wait"
-
-        onExitComplete={() => null}
-      
+          initial={false}
+          mode="wait"
+          onExitComplete={() => null}
       >
-        {menuOpen && <Menu menuOpen={menuOpen} handleClose={close}/>}
+        {open && <Menu toggleMenu={toggleMenu}/>}
       </AnimatePresence>
 
     </nav>

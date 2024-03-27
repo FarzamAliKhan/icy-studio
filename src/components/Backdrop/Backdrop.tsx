@@ -19,17 +19,18 @@ export const Backdrop = (
         initial={{ scaleY: 0 }}
         animate={{ 
             scaleY: 1,
+            opacity: 1,
             transition: {
-                duration: 0.5,
+                duration: 1.5,
                 ease: [0.12, 0, 0.39, 0],
                   
               },
         }}
         exit={{ 
             scaleY: 0,
+            opacity: 1,
             transition: {
-                delay: 0.5,
-                duration: 0.5,
+                duration: 1,
                 ease: [0.22, 1, 0.36, 1],
               },
         }}
