@@ -1,32 +1,112 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
-import SplineAnimation from '../components/Spline.tsx';
-import {Framer} from '../components/Framer.tsx';
+import Hero from '../components/Hero.astro';
 
+import pic01 from '../images/pic01.jpg';
+import pic02 from '../images/pic02.jpg';
+import pic03 from '../images/pic03.jpg';
 
 ---
 
-<Layout title="Welcome to Astro.">
-	<header class="">
-		<!-- <div style="height: 100vh; width:100%; display: flex; 
-		align-items: center; justify-content: center;
-		 background: var(--background); " >
-			<SplineAnimation/ client:load >
-		</div>	 -->
-		<h2>
-			Welcome to <span class="text-gradient">Astro</span>!
-		</h2>
-		<Framer/>
-		<h2>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit.
-			 Cupiditate porro quibusdam modi culpa iusto odio quisquam quia dolor aliquid, reprehenderit ipsa sapiente, qui et. Quasi magni et cumque sunt velit.
-		</h2>
-		<h2>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit.
-			 Cupiditate porro quibusdam modi culpa iusto odio quisquam quia dolor aliquid, reprehenderit ipsa sapiente, qui et. Quasi magni et cumque sunt velit.
-		</h2>
-	</header>
+<Layout title="Icy Studio">
+	<!-- Hero -->
+		<Hero/>
+
+	<!-- One -->
+		<section id="one" class="wrapper style1 special">
+			<div class="inner">
+				<header class="major">
+					<h2>Arcu aliquet vel lobortis ata nisl<br />
+					eget augue amet aliquet nisl cep donec</h2>
+					<p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
+					fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
+				</header>
+					
+			<slot />
+
+				<ul class="icons major">
+					<li><span class="icon fa-diamond major style1"><span class="label">Lorem</span></span></li>
+					<li><span class="icon fa-heart-o major style2"><span class="label">Ipsum</span></span></li>
+					<li><span class="icon fa-code major style3"><span class="label">Dolor</span></span></li>
+				</ul>
+			</div>
+		</section>
+
+	<!-- Two -->
+		<section id="two" class="wrapper alt style2">
+			<section class="spotlight">
+				<div class="image"><img src={pic01.src} alt="pic01" /></div><div class="content">
+	sed ullamcorper</h2>
+					<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+				</div>
+			</section>
+			<section class="spotlight">
+				<div class="image"><img src={pic02.src} alt="pic02" /></div><div class="content">
+					<h2>Tortor dolore feugiat<br />
+					elementum magna</h2>
+					<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+				</div>
+			</section>
+			<section class="spotlight">
+				<div class="image"><img src={pic03.src} alt="pic03" /></div><div class="content">
+					<h2>Augue eleifend aliquet<br />
+					sed condimentum</h2>
+					<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+				</div>
+			</section>
+		</section>
+
+	<!-- Three -->
+		<section id="three" class="wrapper style3 special">
+			<div class="inner">
+				<header class="major">
+					<h2>Accumsan mus tortor nunc aliquet</h2>
+					<p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
+					fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
+				</header>
+				<ul class="features">
+					<li class="icon fa-paper-plane-o">
+						<h3>Arcu accumsan</h3>
+						<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+					</li>
+					<li class="icon fa-laptop">
+						<h3>Ac Augue Eget</h3>
+						<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+					</li>
+					<li class="icon fa-code">
+						<h3>Mus Scelerisque</h3>
+						<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+					</li>
+					<li class="icon fa-headphones">
+						<h3>Mauris Imperdiet</h3>
+						<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+					</li>
+					<li class="icon fa-heart-o">
+						<h3>Aenean Primis</h3>
+						<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+					</li>
+					<li class="icon fa-flag-o">
+						<h3>Tortor Ut</h3>
+						<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+	<!-- CTA -->
+		<section id="cta" class="wrapper style4">
+			<div class="inner">
+				<header>
+					<h2>Arcue ut vel commodo</h2>
+					<p>Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet eleifend fringilla.</p>
+				</header>
+				<ul class="actions vertical">
+					<li><a href="#" class="button fit special">Activate</a></li>
+					<li><a href="#" class="button fit">Learn More</a></li>
+				</ul>
+			</div>
+		</section>
+		
 </Layout>
 
 <style>
@@ -53,37 +133,9 @@ import {Framer} from '../components/Framer.tsx';
 		text-align: center;
 		margin-bottom: 1em;
 	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		margin-bottom: 2rem;
-		border: 1px solid rgba(var(--accent-light), 25%);
-		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
-		padding: 1.5rem;
-		border-radius: 8px;
-	}
-	.instructions code {
-		font-size: 0.8em;
-		font-weight: bold;
-		background: rgba(var(--accent-light), 12%);
-		color: rgb(var(--accent-light));
-		border-radius: 4px;
-		padding: 0.3em 0.4em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent-light));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 2rem;
-		padding: 0;
-	}
+	
+
+
 </style>
 
 

@@ -1,10 +1,12 @@
 import 'animate.css';
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
-import { Menu } from "../components/Menu/Menu";
+import { Menu } from "./Menu";
+import '../utils/framer.js'
 
 import menu from '../images/5-(WHITE).png';
 import logo from '../images/ICY-LOGO-WITHOUT-TAGLINE.png';
+import { fadeIn, slideIn, textVariant } from '../utils/framer.js';
 
 
 export const Navbar = () => {
@@ -16,7 +18,7 @@ export const Navbar = () => {
     };
 
   return (
-    <nav className="flex top-0 animate__animated animate__headShake animate__delay-12s  items-center justify-between py-2 sm:px-12 px-2 bg-transparent fixed w-full ">
+    <nav className="flex top-0   items-center justify-between py-2 sm:px-12 px-2 bg-transparent fixed w-full ">
       {/* Logo on the left */}
       <div className="flex items-center">
         <a href='#'>
@@ -27,7 +29,7 @@ export const Navbar = () => {
             ></img> 
         </a>
       </div>
-
+     
       {/* Button on the right */}
       
       <motion.div
