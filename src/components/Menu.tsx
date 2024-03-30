@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
-import  menuClose  from '../images/53(WHITE).webp';
-import logo2 from '../images/ICY-LOGO-WITH-TAGLINE.png'
-import menu from '../images/5-(WHITE).png';
+import  menuClose  from '../images/reduced/53(WHITE).png';
+import logo2 from '../images/reduced/ICY-LOGO-WITH-TAGLINE.png'
+import menu from '../images/reduced/5-(WHITE).png';
 import { useState } from 'react';
 
 type MenuProps = {

@@ -4,8 +4,8 @@ import { useState } from "react";
 import { Menu } from "./Menu";
 import '../utils/framer.js'
 
-import menu from '../images/5-(WHITE).png';
-import logo from '../images/ICY-LOGO-WITHOUT-TAGLINE.png';
+import menu from '../images/reduced/5-(WHITE).png';
+import logo from '../images/reduced/ICY-LOGO-WITHOUT-TAGLINE.png';
 import { fadeIn, slideIn, textVariant } from '../utils/framer.js';
 
 
