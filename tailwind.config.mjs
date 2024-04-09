@@ -26,7 +26,8 @@ export default {
 				'neon-green': '#b3e823',
 				'blush-red': '#ee4140',
 				'purple-light': '#8f7cff',
-				'real-neon-green': '#00FF00'
+				'real-neon-green': '#00FF00',
+				'border-white' : '#FAFAFA',
 			  },
 		},
 	},
