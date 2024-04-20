@@ -4,17 +4,14 @@ const props = Astro.props;
 
 
 import world from '../images/world-gif.gif';
-
-import star from '../images/reduced/26(WHITE).png'
-import fractal from '../assets/videos/fractal-animation.mp4'
-import globe from '../images/reduced/5-(WHITE).png';
-import arrow from '../images/arrow-scroll.png';
-import prism from '../images/15(WHITE).png';
-import decor from '../images/6(WHITE).png';
-
 import animate2 from '../images/animation-display2.png';
+import doubleArrow from '../images/double-arrow.png';
+import blackArrow from '../images/double-black-arrow.png';
 
 import { Image } from 'astro:assets';
+import StyledButon from './StyledButon.astro';
+import BlackStyledButton from './BlackStyledButton.astro';
+
 
 
 ---
@@ -51,14 +48,14 @@ import { Image } from 'astro:assets';
 </div>
 
 
-<div class="h-auto px-10 pb-10 sm:px-20 sm:pb-0 flex flex-col ">
+<div class="h-auto px-10 pb-10 sm:px-20 mb-20 sm:pb-0 flex flex-col ">
     
-    <div class="flex flex-col sm:flex-row h-auto mb-10 sm:mb-96  ">
+    <div class="flex flex-col sm:flex-row h-auto   ">
         <div class="sm:w-2/5 h-full z-0  ">
             <Image class="max-w-[800px] w-full  " src={animate2} alt=""/>
         </div>
-        <div class=" sm:w-3/5 flex sm:flex-col gap-3 justify-center items-center ">
-            <div class="flex gap-14 text-center ">
+        <div class=" sm:w-3/5 flex sm:flex-col gap-3 justify-center items-center  ">
+            <div class="flex gap-14 text-center w-full">
                 <h1 class=" text-right sm:w-1/3 font-glancyrRegular sm:text-3xl">
                     IMPAULSIVE WEB DEVELOPMENT
                 </h1>
@@ -68,15 +65,217 @@ import { Image } from 'astro:assets';
                     simplifications which makes us <span class=" text-neon-green">STAND OUT!</span>
                   </p>
             </div>
-            <div class="flex gap-14 text-center ">
+            <div class="flex gap-14 text-center w-full ">
                 <h1 class=" text-right sm:w-1/3 font-glancyrRegular sm:text-base">
                     AREAS
                 </h1>
-                  <p class="text-left sm:w-2/3 font-glancyrThin text-xs mb-4 sm:mb-8 sm:text-2xl box-shadow6 ">
-                    Combining unique design and rich technology we build 
-                    digital products exactly as they were designed, without shortcuts or any
-                    simplifications which makes us <span class=" text-neon-green">STAND OUT!</span>
+                <div class="flex gap-4 flex-col pr-32 sm:w-2/3">
+                    <div class="text-left w-full justify-between flex items-center font-glancyrThin text-xs sm:text-xl">
+                        <StyledButon text="E-COMMERCE" />
+                        <Image class=" w-16 h-6 " src={doubleArrow} alt=""></Image>
+                        <StyledButon text="FINANCE" />
+                        <StyledButon text="EDUCATION" />
+                    </div>
+                    <div class="text-left w-full justify-between  flex items-center font-glancyrThin text-xs sm:text-xl ">
+                        <StyledButon text="SOCIAL" />
+                        <StyledButon text="ENTERTAINMENT" />
+                        <Image class=" w-16 h-6 " src={doubleArrow} alt=""></Image>
+                        <StyledButon text="MEDICINE" />
+                    </div>
+                    <div class="text-left w-full justify-between  flex font-glancyrThin text-xs sm:text-xl  ">
+                        <StyledButon text="GAMES" />
+                        <StyledButon text="FASHION" />
+                        <StyledButon text="ARTIFICAL INTELLIGENCE" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+</div>
+
+
+
+
+
+<div class="h-auto bg-white gap-10 pt-20 pb-56 px-20 mb-20 flex flex-col ">
+
+    <div class=" flex justify-end">
+        <svg width="152" height="153" viewBox="0 0 152 153" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M76 0.880859C34.4646 0.880859 0.793427 34.7385 0.793427 76.5041C0.793427 118.27 34.4646 152.127 76 152.127C117.535 152.127 151.207 118.27 151.207 76.5041C151.207 34.7385 117.535 0.880859 76 0.880859Z" fill="black"/>
+            </svg>
+    </div>
+    
+    <div class="flex flex-col sm:flex-row gap-20 h-auto  ">
+        <div class="sm:w-[52%] h-full flex-col items-center z-0 text-black text-left ">
+            <div class=" font-glancyrRegular text-base mb-2 sm:mb-8 sm:text-3xl"> 
+                TECHNICAL DESIGN
+              </div>
+              <p class=" font-glancyrThin text-base mb-4 sm:mb-8 sm:text-2xl box-shadow6 ">
+                Building digital products from scratch is a fantastic team adventure! 
+                Each member adds their own special touch to the project, 
+                and it's super important that we all gel together. 
+                Having established routines and a tightly-knit team are our secret ingredients to success & don't even get us started on design
+                 - IT’S OUR EVERYTHING! A good design can make your brand <span class=" text-blush-red">Bloom</span>  and become <span class=" text-blush-red">Irresistible!</span>
+              </p>
+        </div>
+        <div class=" sm:w-[48%] flex sm:flex-col justify-center items-center ">
+            <div class="flex-col flex pt-8 gap-2 text-center w-full ">
+                <h1 class=" text-left text-black mb-5 sm:w-1/3 font-glancyrRegular sm:text-base">
+                    AREAS
+                </h1>
+                <div class="flex gap-3 flex-col ">
+                    <div class="text-left w-full gap-4 flex items-center font-glancyrThin text-xs sm:text-xl">
+                        <BlackStyledButton text="UI/UX DESIGN" />
+                        <BlackStyledButton text="VISUAL-IDENTITY" />
+                        <BlackStyledButton text="3D-VISUALS" />
+                    </div>
+                    <div class="text-left w-full gap-4 flex items-center font-glancyrThin text-xs sm:text-xl ">
+                        <BlackStyledButton text="MOTION-DESIGN" />
+                        <Image class=" w-40 h-6 " src={blackArrow} alt=""></Image>
+                        <BlackStyledButton text="MOBILE APP DESIGN" />
+                    </div>
+                    <div class="text-left w-full gap-4 flex font-glancyrThin text-xs sm:text-xl  ">
+                        <BlackStyledButton text="PRODUCT DESIGN" />
+                        <BlackStyledButton text="UX-WIREFRAME" />
+                        <BlackStyledButton text="DESIGN SYSTEMS" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+
+</div>
+
+
+<div class="h-auto px-10 pb-10 sm:px-20 mb-20 sm:pb-0 flex flex-col ">
+    
+    <div class="flex flex-col sm:flex-row h-auto   ">
+        <div class="sm:w-2/5 h-full z-0  ">
+            <Image class="max-w-[800px] w-full  " src={animate2} alt=""/>
+        </div>
+        <div class=" sm:w-3/5 flex sm:flex-col gap-3 justify-center items-center  ">
+            <div class="flex gap-14 text-center w-full ">
+                <h1 class=" text-right  font-glancyrRegular sm:text-3xl ">
+                    CREATIVE <br> DESIGN
+                </h1>
+                  <p class="text-left font-glancyrThin text-xs mb-4 sm:mb-8 sm:text-2xl box-shadow6 ">
+                    Crafting a creative graphic design from the ground up is an amazing collaborative effort! 
+                    Our collective expertise is invaluable, and it is critical that we all work well together. 
+                    Our secret formula to success is an efficient workflow and again
+                    let's not forget whether its brand identity or packaging design 
+                    <span class=" text-neon-green">— DESIGN MEANS EVERYTHING TO US!</span>
+                     Your brand could emerge and become 
+                    irresistible with an appealing design! 
                   </p>
+            </div>
+            <div class="flex gap-14 text-center w-full ">
+                <h1 class=" text-right pl-20 font-glancyrRegular sm:text-base">
+                    AREAS
+                </h1>
+                <div class="flex gap-4 flex-col pr-32 ">
+                    <div class="text-left w-full justify-between flex items-center font-glancyrThin text-xs sm:text-xl">
+                        <StyledButon text="BRAND-IDENTITY" />
+                        <StyledButon text="LOGOS" />
+                        <StyledButon text="PACKAGING" />
+                        <StyledButon text="BRAND GUIDES" />
+                    </div>
+                    <div class="text-left w-full justify-between  flex items-center font-glancyrThin text-xs sm:text-xl ">
+                        <StyledButon text="SOCIAL-MEDIA POSTS" />
+                        <StyledButon text="STATIONERY" />
+                        <StyledButon text="BROCHURES" />
+                        <StyledButon text="ANIMATION" />
+                    </div>
+                    <div class="text-left w-full justify-between  flex font-glancyrThin text-xs sm:text-xl  ">
+                        <StyledButon text="VFX/SFX EDITS" />
+                        <StyledButon text="POSTERS" />
+                        <StyledButon text="ILLUSTRATIONS" />
+                        <StyledButon text="AD-CREATIVES" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+</div>
+
+
+
+
+<div class="h-auto bg-white pt-4 pb-28 px-20 mb-20 flex flex-col ">
+
+    <div class=" flex justify-end">
+        <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <mask id="mask0_72_2620" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="240" height="240">
+            <path d="M0 0H240V240H0V0Z" fill="white"/>
+            </mask>
+            <g mask="url(#mask0_72_2620)">
+            <path d="M67.0177 113.089L131.97 89.4106L120 195L67.0177 113.089Z" fill="white"/>
+            <path d="M67.0177 113.089L131.97 89.4106L120 195L67.0177 113.089Z" stroke="black" stroke-linejoin="round"/>
+            <path d="M131.97 89.4106L172.982 126.903L120 195L131.97 89.4106Z" fill="white"/>
+            <path d="M131.97 89.4106L172.982 126.903L120 195L131.97 89.4106Z" stroke="black" stroke-linejoin="round"/>
+            <path d="M108.03 150.556L67.0177 113.089L120 195L108.03 150.556Z" fill="white"/>
+            <path d="M108.03 150.556L67.0177 113.089L120 195L108.03 150.556Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M172.983 126.903L108.03 150.557L120 195L172.983 126.903Z" fill="white"/>
+            <path d="M172.983 126.903L108.03 150.557L120 195L172.983 126.903Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M131.97 89.4106L67.0177 113.089L108.03 150.556L172.982 126.903L131.97 89.4106Z" fill="white"/>
+            <path d="M131.97 89.4106L67.0177 113.089L108.03 150.556L172.982 126.903L131.97 89.4106Z" stroke="black" stroke-linejoin="round"/>
+            <path d="M67.0168 113.089L131.97 89.4105L119.999 45L67.0168 113.089Z" fill="white"/>
+            <path d="M67.0168 113.089L131.97 89.4105L119.999 45L67.0168 113.089Z" stroke="black" stroke-linejoin="round"/>
+            <path d="M131.969 89.4107L172.982 126.902L119.999 45L131.969 89.4107Z" fill="white"/>
+            <path d="M131.969 89.4107L172.982 126.902L119.999 45L131.969 89.4107Z" stroke="black" stroke-linejoin="round"/>
+            <path d="M108.03 150.556L67.017 113.089L119.999 45L108.03 150.556Z" fill="white"/>
+            <path d="M108.03 150.556L67.017 113.089L119.999 45L108.03 150.556Z" stroke="black" stroke-linejoin="round"/>
+            <path d="M172.982 126.903L108.03 150.556L119.999 45L172.982 126.903Z" fill="white"/>
+            <path d="M172.982 126.903L108.03 150.556L119.999 45L172.982 126.903Z" stroke="black" stroke-linejoin="round"/>
+            </g>
+            </svg>
+            
+            
+    </div>
+    
+    <div class="flex flex-col sm:flex-row gap-28 h-auto  ">
+        <div class="sm:w-[52%] h-full flex-col items-center z-0 text-black text-left ">
+            <div class=" font-glancyrRegular text-base mb-2 sm:mb-8 sm:text-3xl"> 
+                USER-CENTRIC MARKETING
+              </div>
+              <p class=" font-glancyrThin text-base mb-4 sm:mb-8 sm:text-2xl box-shadow6 ">
+                Discover marketing centered around your audience. At Icy Studio, 
+                we place a high value on learning about customer needs and 
+                developing methods that work. Our knowledgeable staff professionally 
+                provides tailored solutions, assisting you in reaching your goals. 
+                With our experience, improve your online visibility, maximize interaction, 
+                and increase <span class=" text-blush-red">ROI</span>. Together, let's create campaigns that leave a lasting impression
+                 and measurable outcomes. Get in touch with us right now to start this
+                <span class=" text-blush-red">rewarding </span>journey together! 
+              </p>
+        </div>
+        <div class=" sm:w-[48%] flex sm:flex-col justify-center items-center ">
+            <div class="flex-col flex pt-8 gap-2 text-center w-full ">
+                <h1 class=" text-left text-black mb-5 sm:w-1/3 font-glancyrRegular sm:text-base">
+                    AREAS
+                </h1>
+                <div class="flex gap-3 flex-col ">
+                    <div class="text-left w-full gap-4 flex items-center font-glancyrThin text-xs sm:text-xl">
+                        <BlackStyledButton text="GOOGLE ADS" />
+                        <BlackStyledButton text="META ADS" />
+                        <BlackStyledButton text="ORGANIC MARKETING" />
+                    </div>
+                    <div class="text-left w-full gap-4 flex items-center font-glancyrThin text-xs sm:text-xl ">
+                        <BlackStyledButton text="ARTICLES/BLOGS" />
+                        <BlackStyledButton text="SEO" />
+                        <BlackStyledButton text="INFLUENCER MARKETING" />
+                    </div>
+                    <div class="text-left w-full gap-4 items-center f flex font-glancyrThin text-xs sm:text-xl  ">
+                        <BlackStyledButton text="PUBLIC RELATIONS" />
+                        <Image class=" w-14 h-3 " src={blackArrow} alt=""></Image>
+                        <BlackStyledButton text="SOCIAL MEDIA MARKETING" />
+                    </div>
+                </div>
             </div>
         </div>
         
@@ -87,7 +286,9 @@ import { Image } from 'astro:assets';
 
 
 
-<style>
+
+
+<style >
      .gradient {
         background: linear-gradient(312.07deg, #B3E823 -35.99%, #FCE1E1 82.9%, #FFFFFF 172.6%);
         background-clip: text;

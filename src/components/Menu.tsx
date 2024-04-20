@@ -198,6 +198,7 @@ const NavLink = ({ title, href} : NavLinkProps) => {
     <motion.div
         className="flex items-center border-solid border-x-2 border-t-2 border-neutral-800"
         animate={{
+            
             color: isHover ? '#000000' : '#ffffff',
             textShadow: isHover ? '0px 0px 4px #00FF00 ' : 'none'
         }}

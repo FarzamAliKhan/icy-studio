@@ -16,7 +16,7 @@ export default {
 				glancyrLightItalic: ['glancyrlight_italic', ...defaultTheme.fontFamily.sans],
 				glancyrMedium: ['glancyrmedium', ...defaultTheme.fontFamily.sans],
 				glancyrMediumItalic: ['glancyrmedium_italic', ...defaultTheme.fontFamily.sans],
-				stretchPro: ['stretch_proregular', ...defaultTheme.fontFamily.sans],
+				stretchPro: ['Stretch Pro', ...defaultTheme.fontFamily.sans],
 			},
 			colors: {
 				transparent: 'transparent',
