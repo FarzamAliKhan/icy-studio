@@ -28,6 +28,7 @@ export default {
 				'purple-light': '#8f7cff',
 				'real-neon-green': '#00FF00',
 				'border-white' : '#FAFAFA',
+				'grey-stroke': '#9E9E9E',
 			  },
 		},
 	},

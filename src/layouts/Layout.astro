@@ -1,5 +1,6 @@
 ---
 import { Navbar } from '../components/Navbar.tsx';
+import { Footer } from '../components/Footer.tsx';
 import 'animate.css';
 import '../assets/css/main.css';
 
@@ -41,7 +42,7 @@ const { title } = Astro.props;
             <!--Content -->
                 <slot></slot>
             <!-- Footer -->
-
+			<Footer client:load />
 		</div>
 	</body>
 </html>
