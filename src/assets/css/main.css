@@ -186,38 +186,26 @@
 		font-size: 100%;
 		font: inherit;
 		vertical-align: baseline;
-
 	}
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
 	}
 
-	body {
-		line-height: 1;
-	}
-
 	ol, ul {
 		list-style: none;
 	}
 
-	blockquote, q {
-		quotes: none;
-	}
-
-	blockquote:before, blockquote:after, q:before, q:after {
-		content: '';
-		content: none;
-	}
-
-	table {
-		border-collapse: collapse;
-		border-spacing: 0;
-	}
-
 	body {
-		-webkit-text-size-adjust: none;
+		overflow-x: hidden;
+		line-height: 1;
 	}
+
+	:root {
+		--color-main: #b3e823;
+		--color-main-second: #8f7cff;
+		--color-main-third: #070707;
+	  }
 
 	#animation-gradient {
 		background: linear-gradient(0deg, #00FF00, #b3e823, #ffffff, #00FF00); /* Add an additional color to create a seamless loop */
@@ -283,19 +271,7 @@
 
 /* Basic */
 
-	body.is-loading *, body.is-loading *:before, body.is-loading *:after {
-			-moz-animation: none !important;
-			-webkit-animation: none !important;
-			-ms-animation: none !important;
-			animation: none !important;
-			-moz-transition: none !important;
-			-webkit-transition: none !important;
-			-ms-transition: none !important;
-			transition: none !important;
-		}
-
 	body, input, select, textarea {
-		overflow-x: hidden;
 		color: #f7f7f7;
 	}
 
@@ -311,6 +287,8 @@
 		a:hover {
 			border-bottom-color: transparent;
 		}
+
+
 
 /* Footer Link Styling */
 
@@ -347,7 +325,7 @@
 	border-radius: 999rem;
 	cursor: pointer;
 	overflow: hidden;
-	background-color: #000000;
+	background-color: #070707;
 }
 .btn:hover .btn__bg {
 	scale: 0.94;

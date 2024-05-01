@@ -4,6 +4,9 @@ import { Footer } from '../components/Footer.tsx';
 import 'animate.css';
 import '../assets/css/main.css';
 
+
+
+
 // import { ViewTransitions } from 'astro:transitions';
 interface Props {
 	title: string;
@@ -33,17 +36,16 @@ const { title } = Astro.props;
 		<title>{title}</title>
 		<!-- <ViewTransitions fallback="swap" /> -->
 	</head>
-	<body class = "landing">
-		<div id="page-wrapper">
+	<body >
             <!-- Header -->
-            <header id="header" class="alt max-h-fit">
-                <Navbar client:load />		
-            </header>
+            	<Navbar client:load />		
+            
             <!--Content -->
                 <slot></slot>
+				
             <!-- Footer -->
-			<Footer client:load />
-		</div>
+				<Footer client:load />
+
 	</body>
 </html>
 
@@ -66,8 +68,9 @@ const { title } = Astro.props;
 		--neon-green: #b3e823;
   		--purple: #8f7cff;
   		--white: #f7f7f7;
-		--background: #000000;
+		--background: #070707;
 	}
+	
 	html {
 		font-family: system-ui, sans-serif;
 		background: var(--background);
@@ -88,6 +91,6 @@ const { title } = Astro.props;
 
 	requestAnimationFrame(raf)
 
-
 </script>
+
 

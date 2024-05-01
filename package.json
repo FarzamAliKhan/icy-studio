@@ -24,6 +24,7 @@
     "astro-compress": "^2.2.15",
     "astro-preload": "^1.1.2",
     "framer-motion": "^11.0.15",
+    "gsap": "^3.12.5",
     "lucide-react": "^0.359.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

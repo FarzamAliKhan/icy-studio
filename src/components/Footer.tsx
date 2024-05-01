@@ -12,7 +12,7 @@ import sendArrow from '../images/Arrow-4.png';
 export const Footer = () => {
   return (
     <>
-        <footer >
+        <footer className=''>
             <ul className=' font-glancyrLight text-5xl border-solid border-t-[1px] border-grey-stroke mb-20 '>
                 <FooterLink href="https://www.linkedin.com/" title='INSTAGRAM'>INSTAGRAM</FooterLink>
                 <FooterLink href="https://www.linkedin.com/" title='LINKEDIN'><div>LINKED<span className=" text-neon-green">IN</span></div></FooterLink>
@@ -144,11 +144,13 @@ export const Footer = () => {
 
                     <div className='flex gap-4 '>
                         
-                        <SocialMediaButton href='#' >
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
-                                <path fill="#B3E823" d="M13.355 22v-9.123h3.062l.459-3.555h-3.52v-2.27c0-1.03.285-1.731 1.761-1.731L17 5.32V2.14A25.233 25.233 0 0 0 14.257 2c-2.715 0-4.573 1.657-4.573 4.7v2.622h-3.07v3.555h3.07V22z" />
-                            </svg>
-                        </SocialMediaButton>
+                       
+                         <SocialMediaButton href='#' >
+                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                                 <path fill="#B3E823" d="M13.355 22v-9.123h3.062l.459-3.555h-3.52v-2.27c0-1.03.285-1.731 1.761-1.731L17 5.32V2.14A25.233 25.233 0 0 0 14.257 2c-2.715 0-4.573 1.657-4.573 4.7v2.622h-3.07v3.555h3.07V22z" />
+                             </svg>
+                         </SocialMediaButton>
+                      
 
                         <SocialMediaButton href='#' >
                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
@@ -179,7 +181,7 @@ export const Footer = () => {
                                 <path fill="#B3E823" d="m10 15l5.19-3L10 9zm11.56-7.83c.13.47.22 1.1.28 1.9c.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83c-.25.9-.83 1.48-1.73 1.73c-.47.13-1.33.22-2.65.28c-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44c-.9-.25-1.48-.83-1.73-1.73c-.13-.47-.22-1.1-.28-1.9c-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83c.25-.9.83-1.48 1.73-1.73c.47-.13 1.33-.22 2.65-.28c1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44c.9.25 1.48.83 1.73 1.73" />
                             </svg>
                         </SocialMediaButton>
-                        
+
                     </div>
 
                     <div className='flex flex-col gap-4'>
@@ -398,14 +400,24 @@ type SocialMediaButtonProps = {
 
 
 export const SocialMediaButton = ({children, href}: SocialMediaButtonProps) => {
-  return (
+
+    const [isHover, setHover] = useState(false)
+
+    return (
     <a href={href}>
-        <button className=' p-2 rounded-full bg-transparent outline outline-3 outline-neon-green'>
+        <motion.button
+        onHoverStart={() => setHover(true)}
+        onHoverEnd={() => setHover(false)}
+        animate={{
+            backgroundColor: isHover ? '#b3e823' : '#000000',
+            transition: { duration: 0.4 } // Add transition duration
+        }}
+         className=' p-2 rounded-full bg-transparent outline outline-3 outline-neon-green'>
             <div className=' flex justify-center items-center rounded-full '>
                 {children}
             </div>
 
-        </button>
+        </motion.button>
     </a>
   )
 }
