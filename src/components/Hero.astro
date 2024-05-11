@@ -28,10 +28,10 @@ import { Image } from 'astro:assets';
                 
                 <div class=" relative h-auto flex justify-center mb-8">
                     
-                    <div class="relative z-10 flex w-full flex-col items-center gap-4">
+                    <div class="relative z-10 flex w-full flex-col items-center gap-4 ">
                         <div class="text-9xl flex gap-32 pr-80 items-center hero-line-1">
                             <span class=" font-glancyrThin box-shadow2">WE</span> 
-                            <span class=" font-glancyrLightItalic box-shadow2"><div class="flex p-0 justify-center">
+                            <span class=" font-glancyrLightItalic box-shadow2"><div data-cursor="pointer2" class="flex p-0 justify-center ">
                                 <button class="btn bg-transparent h-8 w-48 text-base sm:h-40 sm:w-[650px] overflow-hidden sm:text-9xl">
                                     <div class="btn__bg bg-transparent ">
                                         <span class="btn__bg__layer bg-transparent btn__bg__layer-first"></span>
@@ -43,7 +43,7 @@ import { Image } from 'astro:assets';
                                 </button>
                             </div></span>
                         </div>
-                        <div class="text-9xl flex gap-2 pl-72 items-center hero-line-2 ">
+                        <div class="text-9xl flex gap-2 pl-72 items-center hero-line-1 ">
                             <span class=" mr-6 mb-6">
 
                                 <svg width="65" height="66" viewBox="0 0 65 66" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -55,19 +55,19 @@ import { Image } from 'astro:assets';
                             </span> 
                             <span class=" font-glancyrThin gradient-main text-transparent bg-clip-text ">RE<span class=" font-glancyrThinItalic">M</span>ARKABLE</span>
                         </div>
-                        <div class="text-9xl flex gap-5 pr-[19rem] hero-line-3">
+                        <div class="text-9xl flex gap-5 pr-[19rem] hero-line-1">
                             <span class=" font-glancyrThin box-shadow3 ">DIGITAL</span> 
                             <span>
                                 <Image class="h-24 w-36" src={globe} alt=""/>
                             </span>
                         </div>
                         <div class="flex text-9xl gap-6">
-                            <span class=" font-glancyrThin">
+                            <span class=" font-glancyrThin ">
                                 <div class="sm:flex sm:justify-center sm:items-center text-right ">
-                                    <div class=" font-glancyrLight text-xl sm:text-2xl mb-6 sm:mb-16 ">ICY STUD<span 
+                                    <div class=" font-glancyrLight text-xl sm:text-2xl mb-6 sm:mb-16 hero-line-5 ">ICY STUD<span 
                                         class="text-neon-green font-glancyrLightItalic">I</span>O IS AN 
                                         <span class= "underline ">AWARD-WINNING</span><br>
-                                        <div class="flex gap-1 justify-end items-center ">
+                                        <div class="flex gap-1 justify-end items-center hero-line-5">
                                             <div class="flex text-xs gradientMultiDisciplinary text-transparent bg-clip-text leading-3 flex-col ">
                                                 <div>
                                                     MULTI
@@ -81,19 +81,19 @@ import { Image } from 'astro:assets';
                                                 <div class=" gradientSecondary2 text-transparent bg-clip-text"> DEVELOPMENT</div> <br>
                                             </div>
                                         </div> 
-                                        <span class="hero-line-6 outline">
+                                        <div class=" hero-line-5">
                                             AGENCY LOCATED IN FLORIDA, USA
-                                        </span>
+                                        </div>
                                     </div>
                                 </div>     
                             </span> 
-                            <div class="outline outline-1 h-2/3  "></div>
-                            <span class=" font-glancyrThinItalic box-shadow4 hero-line-4" >SOLUTIONS<span class=" text-blush-red">.</span></span>
+                            <div class="outline outline-1 h-2/3 hero-line-5  "></div>
+                            <span class=" font-glancyrThinItalic box-shadow4 hero-line-1" >SOLUTIONS<span class=" text-blush-red">.</span></span>
                         </div>
                     </div>
                 </div>
 
-                <div class="flex p-0 justify-center">
+                <div data-cursor="pointer2" class="flex p-0 justify-center hero-button-1 ">
                     <button class="btn bg-transparent h-8 w-48 text-base sm:h-20 sm:w-[500px] sm:text-4xl">
                         <div class="btn__bg bg-transparent ">
                             <span class="btn__bg__layer bg-transparent btn__bg__layer-first"></span>
@@ -109,7 +109,7 @@ import { Image } from 'astro:assets';
     
     </div>
 
-    <div class=" w-full h-auto relative z-10">
+    <div class=" w-full h-auto relative z-10 ">
         <div class="flex text-xl items-center justify-between px-12  py-6">
             <div class="flex items-center gap-12 ">
                 <span class=" font-glancyrThin" > EST. 2020</span> 
@@ -140,7 +140,7 @@ import { Image } from 'astro:assets';
             <div class="mb-0 ">
                 <div class="flex sm:left-[900px] relative top-4 z-10 sm:top-12 ">
                     <div class="relative z-20 sm:top-16 ">
-                        <svg width="239" height="186" viewBox="0 0 239 186" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- <svg width="239" height="186" viewBox="0 0 239 186" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_80_3996)">
                             <mask id="mask0_80_3996" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="239" height="186">
                             <path d="M194.136 -1.02501e-06L0 97.2711L44.3481 185.782L238.485 88.5113L194.136 -1.02501e-06Z" fill="white"/>
@@ -155,7 +155,9 @@ import { Image } from 'astro:assets';
                             <rect width="217.142" height="99" fill="white" transform="translate(0 97.2711) rotate(-26.6129)"/>
                             </clipPath>
                             </defs>
-                            </svg>
+                            </svg> -->
+                            <dotlottie-player  src="src/assets/videos/we-turn.json" background="transparent" 
+                speed="1" style="width: 239px; height:186px; transform: rotate(-25deg); " loop autoplay></dotlottie-player>
                             
                     </div>
                     <div id='circle' class= " text-white font-glancyrLight text-base" 
@@ -285,7 +287,7 @@ import { Image } from 'astro:assets';
                 <div class="w-[80px] mr-2">
                     <Image src={decor} alt=""/>
                 </div>
-                <div class=" font-glancyrThin text-2xl sm:text-xl sm:mt-6 mr-6 ">
+                <div class=" font-glancyrThin text-grey-text text-base sm:text-xl sm:mt-6 mr-6 ">
                     While delivering creative experiences and media strategies that supercharge 
                     campaigns  <br> to achieve sustainable business
                     growth and skyrocket reach and engagement.
@@ -312,9 +314,6 @@ import { Image } from 'astro:assets';
                   overtime and not seeing any results. So it's time to set yourself as the industry leader you've become
                   with a kick-ass brand your customers genuinely love. A <span class=" text-neon-green">WEBSITE</span> and <span class=" text-neon-green">BRAND IDENTITY</span> that works as hard as you do!
               </p>
-              <div class="box size-[200px] bg-yellow-300">
-                    IUSDAHUIHS
-              </div>
               <div class="flex w-full h-full justify-end ">
                     <div class ="flex items-end  ">
                         <div class="flex items-center gap-4 ">
@@ -333,21 +332,27 @@ import { Image } from 'astro:assets';
                     </div>
                 </div>
         </div>
-        
     </div>
-
 </div>
 
 <div class= "w-full items-center flex sm:h-[35px] h-[20px] outline outline-1 outline-neon-green">
-    <div class="text-wrapper font-glancyrThinItalic text-xl">
-        <h1>- Tailored Excellence for every pixel and branding! - We partner on big and 
-            small projects with all kinds of clients&nbsp; </h1>
-        <h1>- Tailored Excellence for every pixel and branding! - We partner on big and 
-                small projects with all kinds of clients&nbsp; </h1>
-        <h1>- Tailored Excellence for every pixel and branding! - We partner on big and 
-                    small projects with all kinds of clients&nbsp; </h1>
-        <h1>- Tailored Excellence for every pixel and branding! - We partner on big and 
-                        small projects with all kinds of clients &nbsp;</h1>
+    <div class="text-wrapper font-glancyrThin text-xl">
+        <h1>
+            ICY STUDIO IS WHERE WEB WIZARDS UNLEASH YOUR DIGITAL ERA
+            - TAILORED EXCELLENCE FOR EVERY PIXEL AND BRANDING!
+            - WE PARTNER ON BIG AND SMALL PROJECTS WITH ALL KINDS OF CLIENTS&nbsp; 
+        </h1>
+        <h1>
+            ICY STUDIO IS WHERE WEB WIZARDS UNLEASH YOUR DIGITAL ERA
+            - TAILORED EXCELLENCE FOR EVERY PIXEL AND BRANDING!
+            - WE PARTNER ON BIG AND SMALL PROJECTS WITH ALL KINDS OF CLIENTS&nbsp; 
+        </h1>
+        <h1>
+            ICY STUDIO IS WHERE WEB WIZARDS UNLEASH YOUR DIGITAL ERA
+            - TAILORED EXCELLENCE FOR EVERY PIXEL AND BRANDING!
+            - WE PARTNER ON BIG AND SMALL PROJECTS WITH ALL KINDS OF CLIENTS&nbsp; 
+        </h1>
+        
     </div>
 </div>  
 
@@ -362,10 +367,10 @@ import { Image } from 'astro:assets';
         overflow: hidden;
     }
 
-    h1 {
+    .text-wrapper h1 {
         white-space: nowrap;
         letter-spacing: 1px;
-        animation: move-rtl 12s linear infinite;
+        animation: move-rtl 26s linear infinite;
     }
 
     @keyframes move-rtl {
@@ -555,66 +560,119 @@ import { Image } from 'astro:assets';
 
 <script>
     import { gsap } from 'gsap';
+
+//     import splitType from 'split-type';
+
+// const ourText = new splitType('', { types: 'chars' })
+// const chars = ourText.chars
+
+// gsap.fromTo(
+//   chars,
+//   { 
+//     y: 100,
+//     opacity: 0
+//   },
+//   {
+//     y: 0,
+//     opacity: 1,
+//     stagger: 0.05,
+//     duration: 2,
+//     ease: 'power4.out',
+//   }
+// )
+
     var tl = gsap.timeline();
 
-    var heroAnimation = gsap.fromTo(".hero-line-1", {autoAlpha: 0, x: -200}, {autoAlpha: 1, x:0, duration: 2, ease: "power1.inOut"})
-    heroAnimation.delay(0.4);
-
-    var heroAnimation2 = gsap.fromTo(".hero-line-2", {autoAlpha: 0, x: 200}, {autoAlpha: 1, x:0, duration: 2, ease: "power1.inOut"})
-    heroAnimation2.delay(0.4);
-
-    var heroAnimation3 = gsap.fromTo(".hero-line-3", {autoAlpha: 0, x: -200}, {autoAlpha: 1, x:0, duration: 2, ease: "power1.inOut"})
-    heroAnimation3.delay(0.4);
-
-    var heroAnimation4 = gsap.fromTo(".hero-line-4", {autoAlpha: 0, x: 200}, {autoAlpha: 1, x:0, duration: 2, ease: "power1.inOut"})
-    heroAnimation4.delay(0.4);
-
-    var heroAnimation5 = gsap.fromTo('.hero-line-5', {
+   
+    
+    var heroAnimation = tl.fromTo('.hero-line-1',{
+        autoAlpha: 0,
+        y: 100,
+        skewY:3,
+    }, {
+        autoAlpha: 1,
+        y: 0,
+        skewY: 0,
+        delay: 1,
+        stagger: 0.2,
+        duration: 1.3,
+        ease: "back.out"
+    })
+    .fromTo(".hero-button-1", {autoAlpha: 0, y: 250}, {autoAlpha: 1, y:0, duration: 1.6, ease: "back.out"}, 1.6)
+    .fromTo('.hero-line-5', {
         
         autoAlpha: 0,
         y: -25,
         stagger: {
-            each: 2,
+            each: 0.2,
             from: 'start',
             grid: 'auto',
-            ease: 'power2.inOut',
+            ease: 'power4.out',
         }
     }, {
         autoAlpha: 1,
         y: 0,
         duration: 2
     });
-    heroAnimation5.delay(0.4);
+    
+    // var heroAnimation = gsap.fromTo(".hero-line-1", {autoAlpha: 0, x: -200}, {autoAlpha: 1, x:0, duration: 2, ease: "power1.inOut"})
+    // heroAnimation.delay(0.4);
 
+    // var heroAnimation2 = gsap.fromTo(".hero-line-2", {autoAlpha: 0, x: 200}, {autoAlpha: 1, x:0, duration: 2, ease: "power1.inOut"})
+    // heroAnimation2.delay(0.4);
 
-    var heroAnimation6 = gsap.fromTo('.hero-line-6', {
+    // var heroAnimation3 = gsap.fromTo(".hero-line-3", {autoAlpha: 0, x: -200}, {autoAlpha: 1, x:0, duration: 2, ease: "power1.inOut"})
+    // heroAnimation3.delay(0.4);
+
+    // var heroAnimation4 = gsap.fromTo(".hero-line-4", {autoAlpha: 0, x: 200}, {autoAlpha: 1, x:0, duration: 2, ease: "power1.inOut"})
+    // heroAnimation4.delay(0.4);
+
+    // var heroAnimation5 = gsap.fromTo('.hero-line-5', {
         
-        autoAlpha: 0,
-        y: 25,
-        stagger: {
-            each: 2,
-            from: 'end',
-            grid: 'auto',
-            ease: 'power2.inOut',
-        }
-    }, {
-        autoAlpha: 1,
-        y: 0,
-        duration: 2
-    });
-    heroAnimation6.delay(0.4);
+    //     autoAlpha: 0,
+    //     y: -25,
+    //     stagger: {
+    //         each: 2,
+    //         from: 'start',
+    //         grid: 'auto',
+    //         ease: 'power2.inOut',
+    //     }
+    // }, {
+    //     autoAlpha: 1,
+    //     y: 0,
+    //     duration: 2
+    // });
+    // heroAnimation5.delay(0.4);
+
+
+    // var heroAnimation6 = gsap.fromTo('.hero-line-6', {
+        
+    //     autoAlpha: 0,
+    //     y: 25,
+    //     stagger: {
+    //         each: 2,
+    //         from: 'end',
+    //         grid: 'auto',
+    //         ease: 'power2.inOut',
+    //     }
+    // }, {
+    //     autoAlpha: 1,
+    //     y: 0,
+    //     duration: 2
+    // });
+    // heroAnimation6.delay(0.4);
 
 
 
 
-    var myAnimation = tl.to(".box", { duration: 1, x: 100 }) 
-    .to(".box", { duration: 1, y: 200, rotation: 90})
-    .to(".box", { duration: 1, rotation: 180, x:100 });
+    // var myAnimation = tl.to(".box", { duration: 1, x: 100 }) 
+    // .to(".box", { duration: 1, y: 200, rotation: 90})
+    // .to(".box", { duration: 1, rotation: 180, x:100 });
     
 
-    myAnimation.repeat(-1);
+    // myAnimation.repeat(-1);
 
-    myAnimation.yoyo(true);
+    // myAnimation.yoyo(true);
 
 
 

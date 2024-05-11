@@ -17,25 +17,31 @@ import BlackStyledButton from './BlackStyledButton.astro';
 ---
 
 
-<div class="h-auto px-4 pb-10 sm:px-36 sm:pt-5 sm:pb-0 flex flex-col  ">
+<div id="services-zoom-in" class="h-auto px-4 pb-10 gap-40 sm:px-36 sm:pt-72 sm:pb-20 outline outline-black flex flex-col bg-white rounded-[5rem] overflow-hidden rounded-b-none ">
         
     <div class="relative flex flex-col justify-center h-auto items-center sm:mb-48 ">
        
-        <div class=" text-[34px] sm:text-9xl mb-5 sm:mb-10 font-stretchPro bg-clip-text text-transparent gradient ">
+        <h1 class=" text-[34px] sm:text-9xl mb-5 sm:mb-10 font-stretchPro text-black  ">
                 S<span class="">E</span>RVICCES
-        </div>
-        <p class=" sm:w-1/2 text-center text-xs sm:text-base font-glancyrThinItalic">
+        </h1>
+        <p class=" sm:w-1/2 text-center text-[#888888] text-xs sm:text-xl font-glancyrThinItalic">
             We specialize in Websites, Logo’s & Branding, Animation’s, 
             Social media marketing, Design systems, Digital ADS,  
             as well as Packaging design and we’re here to take your 
             brand to new heights of perfection!
         </p>
-      </div>
+        
+    </div>
+    <svg class="relative left-[50%]" width="38" height="16" viewBox="0 0 38 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g opacity="0.880828">
+        <path d="M2.38846 1.64014L19.0906 14.0901L35.6127 1.64014" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+    </svg>
 </div> 
 
 
-<div class=" w-full h-auto ">
-    <div class="flex text-xl  items-center justify-between px-4 py-4 sm:px-12 sm:py-14">
+<div class=" w-full h-auto  ">
+    <div class="flex text-xl  items-center justify-between px-4 py-4 sm:px-12 sm:py-14 services-line-1">
         <h1 class=" font-glancyrRegular text-2xl sm:text-8xl" > SERVICES </h1> 
         <div>
             <Image src={world} class=" size-10 sm:size-28 mb-2" alt=""/>
@@ -49,14 +55,14 @@ import BlackStyledButton from './BlackStyledButton.astro';
 </div>
 
 
-<div class="h-auto px-4 pb-10 sm:px-20 sm:mb-20 mb-4 sm:pb-0 flex flex-col ">
+<section class=" services-section h-auto px-4 pb-10 sm:px-20 sm:mb-20 mb-4 sm:pb-0 flex flex-col ">
     
-    <div class="flex flex-col sm:flex-row h-auto gap-8 sm:gap-0  ">
-        <div class="sm:w-2/5 w-full flex items-center justify-center h-full z-0  ">
+    <div class="flex flex-col sm:flex-row h-auto gap-8 sm:gap-0 text ">
+        <div class="sm:w-2/5 w-full flex items-center justify-center h-full z-0  services-img-1 ">
             <Image class=" w-[400px] sm:w-[800px]   " src={animate2} alt=""/>
         </div>
         <div class=" sm:w-3/5 flex flex-col gap-3 justify-center items-center  ">
-            <div class="flex gap-4 sm:gap-14 text-center w-full">
+            <div class="flex gap-4 sm:gap-14 text-center w-full services-line-2">
                 <h1 class=" text-right w-[30%] sm:w-1/3 font-glancyrRegular text-[10px] sm:text-3xl">
                     IMPAULSIVE WEB DEVELOPMENT
                 </h1>
@@ -66,7 +72,7 @@ import BlackStyledButton from './BlackStyledButton.astro';
                     simplifications which makes us <span class=" text-neon-green">STAND OUT!</span>
                   </p>
             </div>
-            <div class="flex gap-4 sm:gap-14 text-center w-full ">
+            <div class="flex gap-4 sm:gap-14 text-center w-full services-line-2 ">
                 <h1 class=" text-right w-[20%] sm:w-1/3 font-glancyrRegular text-[10px] sm:text-base">
                     AREAS
                 </h1>
@@ -94,13 +100,13 @@ import BlackStyledButton from './BlackStyledButton.astro';
         
     </div>
 
-</div>
+</section>
 
 
 
 
 
-<div class="h-auto bg-white gap-10 pt-20 pb-56 px-4 sm:px-20 mb-20 flex flex-col ">
+<section class=" services-section h-auto  bg-white gap-10 pt-20 pb-56 px-4 sm:px-20 flex flex-col rounded-[5rem] overflow-hidden rounded-b-none ">
 
     <div class=" flex justify-end">
         <svg width="152" height="153" viewBox="0 0 152 153" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -108,7 +114,7 @@ import BlackStyledButton from './BlackStyledButton.astro';
             </svg>
     </div>
     
-    <div class="flex flex-col sm:flex-row gap-20 h-auto  ">
+    <div class="flex flex-col sm:flex-row gap-20 h-auto text ">
         <div class="sm:w-[52%] h-full flex-col items-center z-0 text-black text-left ">
             <div class=" font-glancyrRegular text-base mb-2 sm:mb-8 sm:text-3xl"> 
                 TECHNICAL DESIGN
@@ -146,69 +152,64 @@ import BlackStyledButton from './BlackStyledButton.astro';
             </div>
             
         </div>
-        
-        
     </div>
+</section>
 
-</div>
-
-
-<div class="h-auto px-4 pb-10 sm:px-20 mb-20 sm:pb-0 flex flex-col ">
-    
-    <div class="flex flex-col sm:flex-row h-auto   ">
-        <div class="sm:w-2/5 h-full z-0  ">
-            <Image class="max-w-[800px] w-full  " src={animate2} alt=""/>
-        </div>
-        <div class=" sm:w-3/5 flex sm:flex-col gap-3 justify-center items-center  ">
-            <div class="flex gap-14 text-center w-full ">
-                <h1 class=" text-right  font-glancyrRegular sm:text-3xl ">
-                    CREATIVE <br> DESIGN
-                </h1>
-                  <p class="text-left font-glancyrThin text-xs mb-4 sm:mb-8 sm:text-2xl box-shadow6 ">
-                    Crafting a creative graphic design from the ground up is an amazing collaborative effort! 
-                    Our collective expertise is invaluable, and it is critical that we all work well together. 
-                    Our secret formula to success is an efficient workflow and again
-                    let's not forget whether its brand identity or packaging design 
-                    <span class=" text-neon-green">— DESIGN MEANS EVERYTHING TO US!</span>
-                     Your brand could emerge and become 
-                    irresistible with an appealing design! 
-                  </p>
+<div class="bg-white">
+    <section class=" services-section h-auto px-4 pb-10 sm:px-20 mb-20 sm:pb-0 flex flex-col bg-black rounded-[5rem] overflow-hidden rounded-b-none ">  
+        
+        <div class="flex flex-col sm:flex-row h-auto text  ">
+            <div class="sm:w-2/5 h-full z-0  ">
+                <Image class="max-w-[800px] w-full  " src={animate2} alt=""/>
             </div>
-            <!-- <div class="flex gap-14 text-center w-full ">
-                <h1 class=" text-right pl-20 font-glancyrRegular sm:text-base">
-                    AREAS
-                </h1>
-                <div class="flex gap-4 flex-col pr-32 ">
-                    <div class="text-left w-full justify-between flex items-center font-glancyrThin text-xs sm:text-xl">
-                        <StyledButon text="BRAND-IDENTITY" />
-                        <StyledButon text="LOGOS" />
-                        <StyledButon text="PACKAGING" />
-                        <StyledButon text="BRAND GUIDES" />
-                    </div>
-                    <div class="text-left w-full justify-between  flex items-center font-glancyrThin text-xs sm:text-xl ">
-                        <StyledButon text="SOCIAL-MEDIA POSTS" />
-                        <StyledButon text="STATIONERY" />
-                        <StyledButon text="BROCHURES" />
-                        <StyledButon text="ANIMATION" />
-                    </div>
-                    <div class="text-left w-full justify-between  flex font-glancyrThin text-xs sm:text-xl  ">
-                        <StyledButon text="VFX/SFX EDITS" />
-                        <StyledButon text="POSTERS" />
-                        <StyledButon text="ILLUSTRATIONS" />
-                        <StyledButon text="AD-CREATIVES" />
-                    </div>
+            <div class=" sm:w-3/5 flex sm:flex-col gap-3 justify-center items-center  ">
+                <div class="flex gap-14 text-center w-full ">
+                    <h1 class=" text-right  font-glancyrRegular sm:text-3xl ">
+                        CREATIVE <br> DESIGN
+                    </h1>
+                      <p class="text-left font-glancyrThin text-xs mb-4 sm:mb-8 sm:text-2xl box-shadow6 ">
+                        Crafting a creative graphic design from the ground up is an amazing collaborative effort! 
+                        Our collective expertise is invaluable, and it is critical that we all work well together. 
+                        Our secret formula to success is an efficient workflow and again
+                        let's not forget whether its brand identity or packaging design 
+                        <span class=" text-neon-green">— DESIGN MEANS EVERYTHING TO US!</span>
+                         Your brand could emerge and become 
+                        irresistible with an appealing design! 
+                      </p>
                 </div>
-            </div> -->
+                <!-- <div class="flex gap-14 text-center w-full ">
+                    <h1 class=" text-right pl-20 font-glancyrRegular sm:text-base">
+                        AREAS
+                    </h1>
+                    <div class="flex gap-4 flex-col pr-32 ">
+                        <div class="text-left w-full justify-between flex items-center font-glancyrThin text-xs sm:text-xl">
+                            <StyledButon text="BRAND-IDENTITY" />
+                            <StyledButon text="LOGOS" />
+                            <StyledButon text="PACKAGING" />
+                            <StyledButon text="BRAND GUIDES" />
+                        </div>
+                        <div class="text-left w-full justify-between  flex items-center font-glancyrThin text-xs sm:text-xl ">
+                            <StyledButon text="SOCIAL-MEDIA POSTS" />
+                            <StyledButon text="STATIONERY" />
+                            <StyledButon text="BROCHURES" />
+                            <StyledButon text="ANIMATION" />
+                        </div>
+                        <div class="text-left w-full justify-between  flex font-glancyrThin text-xs sm:text-xl  ">
+                            <StyledButon text="VFX/SFX EDITS" />
+                            <StyledButon text="POSTERS" />
+                            <StyledButon text="ILLUSTRATIONS" />
+                            <StyledButon text="AD-CREATIVES" />
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            
         </div>
-        
-    </div>
-
+    
+    </section>
 </div>
 
-
-
-
-<div class="h-auto bg-white pt-4 pb-28  px-4 sm:px-20 mb-20 flex flex-col ">
+<section class=" services-section h-auto bg-white pt-4 pb-28  px-4 sm:px-20 flex flex-col rounded-[5rem] overflow-hidden rounded-b-none  ">
 
     <div class=" flex justify-end">
         <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -240,7 +241,7 @@ import BlackStyledButton from './BlackStyledButton.astro';
             
     </div>
     
-    <div class="flex flex-col sm:flex-row gap-28 h-auto  ">
+    <div class="flex flex-col sm:flex-row gap-28 h-auto text ">
         <div class="sm:w-[52%] h-full flex-col items-center z-0 text-black text-left ">
             <div class=" font-glancyrRegular text-base mb-2 sm:mb-8 sm:text-3xl"> 
                 USER-CENTRIC MARKETING
@@ -284,7 +285,7 @@ import BlackStyledButton from './BlackStyledButton.astro';
         
     </div>
 
-</div>
+</section>
 
 
 
@@ -296,3 +297,151 @@ import BlackStyledButton from './BlackStyledButton.astro';
         background-clip: text;
     }
 </style>
+
+<script>
+    import { gsap } from 'gsap';
+    import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+    let tl = gsap.timeline();
+
+    const { innerHeight } = window;
+
+    gsap.registerPlugin(ScrollTrigger);
+    // // zoom-in animation
+    let scroll = tl.to("#services-zoom-in h1", {
+        scale: 160, stagger: 0.25, duration: 0.2, ease: "power1.inOut", 
+        scrollTrigger: {
+            trigger: "#services-zoom-in",
+            pin: true,
+            end: `+=${innerHeight * 1.3}`,
+            scrub: 10,
+            markers: true,
+            
+        }
+    });
+
+    // sevices heading animation
+    var servicesAnimation = tl
+    .fromTo('.services-line-1', {
+        autoAlpha: 0,
+        y: 70,
+         duration: 0.2,
+        ease: "power1.inOut",
+        scrollTrigger: {
+            trigger: ".services-line-1",
+            start: 'top bottom',
+            end: 'bottom center',
+            scrub: 1,
+            markers: true,
+        }
+    },{
+        autoAlpha: 1,
+        y: 0,
+        duration: 0.2,
+        ease: "power1.inOut",
+        scrollTrigger: {
+            trigger: ".services-line-1",
+            start: 'top bottom',
+            end: 'bottom center',
+            scrub: 1,
+            markers: true,
+        }
+    });
+
+    //services text-reveal animation
+    var servicesAnimation2 = tl
+    .fromTo('.services-line-2', {
+        autoAlpha: 0,
+        y: 40,
+         duration: 0.5,
+        ease: "power1.inOut",
+    },{
+        autoAlpha: 1,
+        y: 0,
+        duration: 0.5,
+        ease: "power1.inOut",
+        stagger: {
+            each: 0.1,
+            from: 'start',
+            grid: 'auto',
+            ease: 'power2.inOut',
+        },
+        scrollTrigger: {
+            trigger: ".services-line-2",
+            start: 'top bottom',
+            end: 'bottom 60%',
+            scrub: 0.2,
+            markers: true,
+        }
+    });
+
+    //services image animation
+    tl.fromTo('.services-img-1', {
+        autoAlpha: 0,
+        y: 15,
+        scale: 0.90,
+         duration: 0.5,
+        ease: "power1.inOut",
+    },{
+        autoAlpha: 1,
+        y: 0,
+        scale: 1,
+        duration: 0.5,
+        ease: "power1.inOut",
+        scrollTrigger: {
+            trigger: ".services-img-1",
+            start: 'top bottom',
+            end: 'bottom 60%',
+            scrub: 0.2,
+            markers: true,
+        }
+    });
+
+
+    // services section overlap sliding animation
+
+    const tl2 = gsap.timeline({
+    scrollTrigger: {
+        trigger: '.services-section',
+        // pin: true,
+        start: 'top top',
+        end: 'bottom top',
+        scrub: 1,
+        markers: true,
+        // ease: 'linear',
+        }
+    })
+
+    tl2.to('.services-section .text', {
+    height: 0,
+    paddingBottom: 0,
+    opacity: 0,
+    stagger: .5,
+    })
+    tl2.to('.services-section', {
+    marginBottom: -15,
+    stagger: .5,
+    }, '<')
+
+
+    // var servicesAnimation = tl
+    // .to('.services-line-1', {
+    //     scale: 2, duration: 0.2, ease: "power1.inOut", 
+    //     scrollTrigger: {
+    //         trigger: ".services-line-1",
+    //         pin: true,
+    //         start: 'top center',
+    //         end: `bottom center`,
+    //         scrub: 10,
+    //         markers: true,
+            
+    //     }
+    // });
+    const tl3 = gsap.timeline();
+
+   
+
+   
+
+</script>
+

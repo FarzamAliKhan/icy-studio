@@ -7,5 +7,5 @@ import preload from "astro-preload";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [preload(), compress(), tailwind(), react(), ]
+  integrations: [preload(), compress(), tailwind(), react(),  ]
 });

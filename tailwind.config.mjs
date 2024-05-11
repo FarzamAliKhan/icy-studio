@@ -29,8 +29,10 @@ export default {
 				'real-neon-green': '#00FF00',
 				'border-white' : '#FAFAFA',
 				'grey-stroke': '#9E9E9E',
+				'grey-text': '#C0C0C0',
 			  },
 		},
 	},
 	plugins: [],
 }
+

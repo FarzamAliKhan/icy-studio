@@ -31,12 +31,15 @@ const { title } = Astro.props;
 		<link rel="preload" href="src/images/reduced/ICY-LOGO-WITH-TAGLINE.png" as="image" crossorigin="anonymous" />
 		<link rel="preload" href="src/images/reduced/53(WHITE).png" as="image" crossorigin="anonymous" />
 		<link href="https://fonts.cdnfonts.com/css/stretch-pro" rel="stylesheet">
+		<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
                 
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 		<!-- <ViewTransitions fallback="swap" /> -->
 	</head>
 	<body >
+				<div id="cursor"></div>
+				<div id="cursor-border"></div>
             <!-- Header -->
             	<Navbar client:load />		
             
@@ -45,6 +48,9 @@ const { title } = Astro.props;
 				
             <!-- Footer -->
 				<Footer client:load />
+
+				
+
 
 	</body>
 </html>
@@ -76,6 +82,33 @@ const { title } = Astro.props;
 		background: var(--background);
 		background-size: 224px;
 	}
+
+	#cursor {
+  position: fixed;
+  top: -5px;
+  left: -5px;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 999;
+}
+
+#cursor-border {
+  --size: 50px;
+  position: fixed;
+  top: calc(var(--size) / -2);
+  left: calc(var(--size) / -2);
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px white;
+  pointer-events: none;
+  transition: top 0.15s ease-out, left 0.15s ease-out, width 0.15s ease-out,
+    height 0.15s ease-out, background-color 0.15s ease-out;
+  z-index: 999;
+}
 	
 </style>
 
@@ -90,6 +123,59 @@ const { title } = Astro.props;
 	}
 
 	requestAnimationFrame(raf)
+
+// Circle follow cursor movements
+
+const cursor = document.querySelector<HTMLElement>("#cursor");
+const cursorBorder = document.querySelector<HTMLElement>("#cursor-border");
+const cursorPos = { x: 0, y: 0 };
+const cursorBorderPos = { x: 0, y: 0 };
+
+document.addEventListener("mousemove", (e) => {
+  cursorPos.x = e.clientX;
+  cursorPos.y = e.clientY;
+
+if (cursor) {
+	cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+}
+});
+
+function loop() {
+  const easting = 8;
+  cursorBorderPos.x += (cursorPos.x - cursorBorderPos.x) / easting;
+  cursorBorderPos.y += (cursorPos.y - cursorBorderPos.y) / easting;
+
+if (cursorBorder) {
+	cursorBorder.style.transform = `translate(${cursorBorderPos.x}px, ${cursorBorderPos.y}px)`;
+}
+  requestAnimationFrame(loop);
+}
+
+requestAnimationFrame(loop);
+
+document.querySelectorAll<HTMLElement>("[data-cursor]").forEach((item) => {
+  item.addEventListener("mouseover", (e) => {
+	if (cursorBorder) {
+		if (item.dataset.cursor === "pointer") {
+      cursorBorder.style.backgroundColor = "rgba(255, 255, 255, .6)";
+      cursorBorder.style.setProperty("--size", "30px");
+    }
+    if (item.dataset.cursor === "pointer2") {
+      cursorBorder.style.backgroundColor = "white";
+      cursorBorder.style.mixBlendMode = "difference";
+      cursorBorder.style.setProperty("--size", "80px");
+    }
+  item.addEventListener("mouseout", (e) => {
+    cursorBorder.style.backgroundColor = "unset";
+    cursorBorder.style.mixBlendMode = "unset";
+    cursorBorder.style.setProperty("--size", "50px");
+  });
+} 
+});   
+});
+
+
+
 
 </script>
 

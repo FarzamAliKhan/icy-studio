@@ -2,7 +2,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { useState, type ReactNode } from 'react';
 
 import location from '../images/location-pin.png';
-import backdrop from '../images/Backdrop.png';
+import backdrop from '../images/abstract-sphere.png';
 import animation from '../images/Animation-Display-8.png';
 import logo from '../images/logo-with-a-dot.png';
 import decoration from '../images/9(WHITE).png';
@@ -33,7 +33,6 @@ export const Footer = () => {
                         
                         <p className=' font-glancyrThin text-xs'>© 2024 ICYSTUDIO Ltd dba Icy Studio. All rights reserved.</p>
                     </div>
-                    <div>
                     <button className="btn border-none h-8 w-48 text-base sm:h-16 sm:w-[430px] text-center sm:text-4xl">
                                 <div className="btn__bg">
                                     <span className="btn__bg__layer btn__bg__layer-first"></span>
@@ -42,8 +41,11 @@ export const Footer = () => {
                                 </div>
                                 <span className="btn__text-out text-white font-glancyrLight">INFO@ICYSTUDIO.CO</span>
                                 <span className="btn__text-in text-white font-glancyrLight">INFO@ICYSTUDIO.CO</span>
-                            </button>
-                    </div>
+                    </button>
+                    <h1 className=' font-glancyrBold text-5xl font-outline-1 '>
+                    LET’S COLLAB FOR <br/>
+                    <span className=' text-black'>YOUR NEXT </span>BIG THING! 
+                    </h1>  
                 </div>
 
                 <div className=' flex flex-col justify-between w-1/3 gap-28 pl-28 '>
@@ -79,6 +81,12 @@ export const Footer = () => {
 
                     <div className=' w-[25%] flex flex-col justify-end gap-5 p-10 h-full '>
 
+                        <a href='#'>
+                            <h2 className=' underline font-glancyrThin text-white text-xl'>
+                                Privacy Policy
+                            </h2>
+                        </a>
+{/* 
                         <button className="btn bg-transparent border-none h-8 w-48 text-base sm:h-16 sm:w-[230px] text-center sm:text-2xl">
                             <div className="btn__bg bg-transparent">
                                 <span className="btn__bg__layer bg-transparent btn__bg__layer-first"></span>
@@ -98,35 +106,31 @@ export const Footer = () => {
                                 </div>
                                 <span className="btn__text-out text-white font-glancyrLight">INFO@ICYSTUDIO.CO</span>
                                 <span className="btn__text-in text-white font-glancyrLight">INFO@ICYSTUDIO.CO</span>
-                            </button>
+                            </button> */}
 
                     </div>
 
                     <div className=' flex flex-col items-center justify-center w-[50%] gap-10 h-full '>
 
-                        <h1 className=' font-stretchPro text-center text-8xl text-neon-green box-shadow-footer'>
+                        <h1 className=' font-stretchPro text-center text-8xl text-white box-shadow-footer'>
                         HAVEE
                         ANNN
                         IDEEA?
                         </h1>
 
-                        <button className=" btn border-none bg-transparent h-8 w-48 text-base sm:h-16 sm:w-[431px] text-center sm:text-5xl">
-                                <div className=" outline outline-3 outline-black  btn__bg border-[6px] box-shadow-footer border-white bg-transparent">
+                        <button className=" btn border-none bg-transparent h-8 w-48 text-base sm:h-20 sm:w-[350px] text-center sm:text-5xl">
+                                <div className=" btn__bg  border-[2px] box-shadow-footer border-white bg-transparent">
                                     <span className="btn__bg__layer bg-transparent btn__bg__layer-first"></span>
                                     <span className="btn__bg__layer bg-transparent btn__bg__layer-second"></span>
                                     <span className="btn__bg__layer bg-transparent btn__bg__layer-third"></span>
                                 </div>
-                                <span className=" box-shadow-footer2  btn__text-out text-neon-green font-glancyrLight">GET IN TOUCH!</span>
-                                <span className=" box-shadow-footer2 btn__text-in text-neon-green font-glancyrLight">GET IN TOUCH!</span>
+                                <span className=" box-shadow-footer2 pt-2 btn__text-out text-neon-green font-glancyrLight">LET'S TALK!</span>
+                                <span className=" box-shadow-footer2 pt-2 btn__text-in text-neon-green font-glancyrLight">LET'S TALK!</span>
                             </button>
 
                     </div>
                     <div className=' flex w-[25%] h-full  p-10 items-end justify-center '>
-                        <a href='#'>
-                            <h2 className=' underline font-glancyrThin text-white text-2xl'>
-                                Privacy Policy
-                            </h2>
-                        </a>
+                        
                     </div>
                 </div>
 

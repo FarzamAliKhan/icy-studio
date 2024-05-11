@@ -21,10 +21,10 @@ export const Navbar = () => {
   return (
     <nav className="flex top-0 z-50 items-center justify-between py-2 sm:px-12 px-2 bg-transparent fixed w-full ">
       {/* Logo on the left */}
-      <div className="flex items-center">
+      <div className="flex items-center" >
         <a href='#'>
           <img 
-            className="h-6 sm:h-10 md:h-12 m-6"
+            className="h-6 sm:h-10 md:h-12 m-6	"
             src={logo2.src}
             alt="Icy Studio"
             ></img> 
@@ -33,7 +33,7 @@ export const Navbar = () => {
      
       {/* Button on the right */}
       
-      <motion.div
+      <motion.div 
           whileHover={{ scale: 1.1, scaleY: 1.1}}
           className='save-button'
           onClick={toggleMenu}
@@ -45,7 +45,7 @@ export const Navbar = () => {
           alt="Menu"  
           >        
           </img> */}
-          <div className='h-8 sm:h-10 md:h-12 m-3 '>
+          <div  className='h-8 sm:h-10 md:h-12 m-3 '>
             <svg width="100%" height="100%" viewBox="0 0 44 55" fill="none" xmlns="http://www.w3.org/2000/svg">
               <mask id="mask0_96_2"  maskUnits="userSpaceOnUse" x="0" y="0" width="44" height="44">
               <path d="M44 0H0V44H44V0Z" fill="white"/>
