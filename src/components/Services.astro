@@ -55,7 +55,7 @@ import BlackStyledButton from './BlackStyledButton.astro';
 </div>
 
 
-<section class=" services-section h-auto px-4 pb-10 sm:px-20 sm:mb-20 mb-4 sm:pb-0 flex flex-col ">
+<section class=" services-section h-auto px-4 pb-10 sm:px-20 sm:mb-60 sm:py-20 mb-4 sm:pb-0 flex flex-col ">
     
     <div class="flex flex-col sm:flex-row h-auto gap-8 sm:gap-0 text ">
         <div class="sm:w-2/5 w-full flex items-center justify-center h-full z-0  services-img-1 ">
@@ -63,8 +63,8 @@ import BlackStyledButton from './BlackStyledButton.astro';
         </div>
         <div class=" sm:w-3/5 flex flex-col gap-3 justify-center items-center  ">
             <div class="flex gap-4 sm:gap-14 text-center w-full services-line-2">
-                <h1 class=" text-right w-[30%] sm:w-1/3 font-glancyrRegular text-[10px] sm:text-3xl">
-                    IMPAULSIVE WEB DEVELOPMENT
+                <h1 class=" heading-1 text-right w-[30%] sm:w-1/3 font-glancyrRegular text-[10px] sm:text-3xl">
+                    WEBSITE <br> DEVELOPMENT
                 </h1>
                   <p class="text-left w-[70%] sm:w-2/3 font-glancyrThin text-[10px] mb-4 sm:mb-8 sm:text-2xl box-shadow6 ">
                     Combining unique design and rich technology we build 
@@ -102,19 +102,14 @@ import BlackStyledButton from './BlackStyledButton.astro';
 
 </section>
 
+<section class=" services-section pb-48 h-auto bg-white gap-4 pt-12  px-4 sm:px-20 flex flex-col rounded-[5rem] overflow-hidden rounded-b-none ">
 
-
-
-
-<section class=" services-section h-auto  bg-white gap-10 pt-20 pb-56 px-4 sm:px-20 flex flex-col rounded-[5rem] overflow-hidden rounded-b-none ">
-
-    <div class=" flex justify-end">
-        <svg width="152" height="153" viewBox="0 0 152 153" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M76 0.880859C34.4646 0.880859 0.793427 34.7385 0.793427 76.5041C0.793427 118.27 34.4646 152.127 76 152.127C117.535 152.127 151.207 118.27 151.207 76.5041C151.207 34.7385 117.535 0.880859 76 0.880859Z" fill="black"/>
-            </svg>
+    <div class=" flex justify-end text">
+        <dotlottie-player  src="src/assets/videos/pen-services.json" background="transparent" 
+            speed="1" style="width: 303px; height:303px" loop autoplay></dotlottie-player>
     </div>
     
-    <div class="flex flex-col sm:flex-row gap-20 h-auto text ">
+    <div class="flex flex-col sm:flex-row gap-20 h-auto text sm:mb-40 ">
         <div class="sm:w-[52%] h-full flex-col items-center z-0 text-black text-left ">
             <div class=" font-glancyrRegular text-base mb-2 sm:mb-8 sm:text-3xl"> 
                 TECHNICAL DESIGN
@@ -155,19 +150,20 @@ import BlackStyledButton from './BlackStyledButton.astro';
     </div>
 </section>
 
-<div class="bg-white">
-    <section class=" services-section h-auto px-4 pb-10 sm:px-20 mb-20 sm:pb-0 flex flex-col bg-black rounded-[5rem] overflow-hidden rounded-b-none ">  
+<div class="bg-white  ">
+    <section class=" services-section h-auto sm:py-28 px-4 pb-10 sm:px-20 sm:pb-0 flex flex-col bg-black rounded-[5rem] overflow-hidden rounded-b-none ">  
         
         <div class="flex flex-col sm:flex-row h-auto text  ">
-            <div class="sm:w-2/5 h-full z-0  ">
-                <Image class="max-w-[800px] w-full  " src={animate2} alt=""/>
+            <div class="sm:w-[30%] h-full z-0  ">
+                <dotlottie-player src="src/assets/videos/hour-glass-services.json" background="transparent" 
+                speed="1" style="width: 800px; height:800px;" loop autoplay></dotlottie-player>
             </div>
-            <div class=" sm:w-3/5 flex sm:flex-col gap-3 justify-center items-center  ">
-                <div class="flex gap-14 text-center w-full ">
-                    <h1 class=" text-right  font-glancyrRegular sm:text-3xl ">
+            <div class=" sm:w-[70%] flex flex-col gap-3 justify-center items-center  ">
+                <div class="flex gap-4 sm:gap-14 text-center w-full ">
+                    <h1 class=" text-right w-[30%] sm:w-1/3 font-glancyrRegular text-[10px] sm:text-3xl">
                         CREATIVE <br> DESIGN
                     </h1>
-                      <p class="text-left font-glancyrThin text-xs mb-4 sm:mb-8 sm:text-2xl box-shadow6 ">
+                    <p class="text-left w-[70%] sm:w-2/3 font-glancyrThin text-[10px] mb-4 sm:mb-8 sm:text-2xl box-shadow6 ">
                         Crafting a creative graphic design from the ground up is an amazing collaborative effort! 
                         Our collective expertise is invaluable, and it is critical that we all work well together. 
                         Our secret formula to success is an efficient workflow and again
@@ -177,31 +173,32 @@ import BlackStyledButton from './BlackStyledButton.astro';
                         irresistible with an appealing design! 
                       </p>
                 </div>
-                <!-- <div class="flex gap-14 text-center w-full ">
-                    <h1 class=" text-right pl-20 font-glancyrRegular sm:text-base">
+                <div class="flex gap-4 sm:gap-14 text-center w-full services-line-2  ">
+                    <h1 class=" text-right w-[20%] sm:w-1/3 font-glancyrRegular text-[10px] sm:text-base">
                         AREAS
                     </h1>
-                    <div class="flex gap-4 flex-col pr-32 ">
-                        <div class="text-left w-full justify-between flex items-center font-glancyrThin text-xs sm:text-xl">
+                    <div class="= flex gap-4 flex-col sm:w-2/3 text-[7px] sm:text-xl">
+                        <div class="text-left w-full gap-4 flex items-center font-glancyrThin ">
                             <StyledButon text="BRAND-IDENTITY" />
-                            <StyledButon text="LOGOS" />
+                            <StyledButon text="LOGO'S" />
                             <StyledButon text="PACKAGING" />
                             <StyledButon text="BRAND GUIDES" />
                         </div>
-                        <div class="text-left w-full justify-between  flex items-center font-glancyrThin text-xs sm:text-xl ">
-                            <StyledButon text="SOCIAL-MEDIA POSTS" />
+                        <div class="text-left w-full gap-4  flex items-center font-glancyrThin  ">
+                            <StyledButon text="SOCIAL-MEDIA IDENTITY" />
                             <StyledButon text="STATIONERY" />
                             <StyledButon text="BROCHURES" />
                             <StyledButon text="ANIMATION" />
                         </div>
-                        <div class="text-left w-full justify-between  flex font-glancyrThin text-xs sm:text-xl  ">
+                        <div class="text-left w-full gap-4 flex font-glancyrThin   ">
                             <StyledButon text="VFX/SFX EDITS" />
                             <StyledButon text="POSTERS" />
                             <StyledButon text="ILLUSTRATIONS" />
                             <StyledButon text="AD-CREATIVES" />
+
                         </div>
                     </div>
-                </div> -->
+                </div>
             </div>
             
         </div>
@@ -211,34 +208,9 @@ import BlackStyledButton from './BlackStyledButton.astro';
 
 <section class=" services-section h-auto bg-white pt-4 pb-28  px-4 sm:px-20 flex flex-col rounded-[5rem] overflow-hidden rounded-b-none  ">
 
-    <div class=" flex justify-end">
-        <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <mask id="mask0_72_2620" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="240" height="240">
-            <path d="M0 0H240V240H0V0Z" fill="white"/>
-            </mask>
-            <g mask="url(#mask0_72_2620)">
-            <path d="M67.0177 113.089L131.97 89.4106L120 195L67.0177 113.089Z" fill="white"/>
-            <path d="M67.0177 113.089L131.97 89.4106L120 195L67.0177 113.089Z" stroke="black" stroke-linejoin="round"/>
-            <path d="M131.97 89.4106L172.982 126.903L120 195L131.97 89.4106Z" fill="white"/>
-            <path d="M131.97 89.4106L172.982 126.903L120 195L131.97 89.4106Z" stroke="black" stroke-linejoin="round"/>
-            <path d="M108.03 150.556L67.0177 113.089L120 195L108.03 150.556Z" fill="white"/>
-            <path d="M108.03 150.556L67.0177 113.089L120 195L108.03 150.556Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M172.983 126.903L108.03 150.557L120 195L172.983 126.903Z" fill="white"/>
-            <path d="M172.983 126.903L108.03 150.557L120 195L172.983 126.903Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M131.97 89.4106L67.0177 113.089L108.03 150.556L172.982 126.903L131.97 89.4106Z" fill="white"/>
-            <path d="M131.97 89.4106L67.0177 113.089L108.03 150.556L172.982 126.903L131.97 89.4106Z" stroke="black" stroke-linejoin="round"/>
-            <path d="M67.0168 113.089L131.97 89.4105L119.999 45L67.0168 113.089Z" fill="white"/>
-            <path d="M67.0168 113.089L131.97 89.4105L119.999 45L67.0168 113.089Z" stroke="black" stroke-linejoin="round"/>
-            <path d="M131.969 89.4107L172.982 126.902L119.999 45L131.969 89.4107Z" fill="white"/>
-            <path d="M131.969 89.4107L172.982 126.902L119.999 45L131.969 89.4107Z" stroke="black" stroke-linejoin="round"/>
-            <path d="M108.03 150.556L67.017 113.089L119.999 45L108.03 150.556Z" fill="white"/>
-            <path d="M108.03 150.556L67.017 113.089L119.999 45L108.03 150.556Z" stroke="black" stroke-linejoin="round"/>
-            <path d="M172.982 126.903L108.03 150.556L119.999 45L172.982 126.903Z" fill="white"/>
-            <path d="M172.982 126.903L108.03 150.556L119.999 45L172.982 126.903Z" stroke="black" stroke-linejoin="round"/>
-            </g>
-            </svg>
-            
-            
+    <div class=" flex justify-start py-12 text">
+        <dotlottie-player src="src/assets/videos/bird-services-section.json" background="transparent" 
+        speed="1" style="width: 182px; height:182px;" loop autoplay></dotlottie-player>
     </div>
     
     <div class="flex flex-col sm:flex-row gap-28 h-auto text ">
@@ -257,38 +229,40 @@ import BlackStyledButton from './BlackStyledButton.astro';
                 <span class=" text-blush-red">rewarding </span>journey together! 
               </p>
         </div>
-        <!-- <div class=" sm:w-[48%] flex sm:flex-col justify-center items-center ">
+        <div class=" sm:w-[48%] flex sm:flex-col justify-center items-center ">
             <div class="flex-col flex pt-8 gap-2 text-center w-full ">
                 <h1 class=" text-left text-black mb-5 sm:w-1/3 font-glancyrRegular sm:text-base">
                     AREAS
                 </h1>
                 <div class="flex gap-3 flex-col ">
                     <div class="text-left w-full gap-4 flex items-center font-glancyrThin text-xs sm:text-xl">
-                        <BlackStyledButton text="GOOGLE ADS" />
-                        <BlackStyledButton text="META ADS" />
-                        <BlackStyledButton text="ORGANIC MARKETING" />
+                        <BlackStyledButton text="UI/UX DESIGN" />
+                        <BlackStyledButton text="VISUAL-IDENTITY" />
+                        <BlackStyledButton text="3D-VISUALS" />
                     </div>
                     <div class="text-left w-full gap-4 flex items-center font-glancyrThin text-xs sm:text-xl ">
-                        <BlackStyledButton text="ARTICLES/BLOGS" />
-                        <BlackStyledButton text="SEO" />
-                        <BlackStyledButton text="INFLUENCER MARKETING" />
+                        <BlackStyledButton text="MOTION-DESIGN" />
+                        <Image class=" w-40 h-6 " src={blackArrow} alt=""></Image>
+                        <BlackStyledButton text="MOBILE APP DESIGN" />
                     </div>
-                    <div class="text-left w-full gap-4 items-center f flex font-glancyrThin text-xs sm:text-xl  ">
-                        <BlackStyledButton text="PUBLIC RELATIONS" />
-                        <Image class=" w-14 h-3 " src={blackArrow} alt=""></Image>
-                        <BlackStyledButton text="SOCIAL MEDIA MARKETING" />
+                    <div class="text-left w-full gap-4 flex font-glancyrThin text-xs sm:text-xl  ">
+                        <BlackStyledButton text="PRODUCT DESIGN" />
+                        <BlackStyledButton text="UX-WIREFRAME" />
+                        <BlackStyledButton text="DESIGN SYSTEMS" />
                     </div>
                 </div>
             </div>
-        </div> -->
-        
+            
+        </div>
         
     </div>
 
+    <div class=" flex justify-end text">
+        <dotlottie-player src="src/assets/videos/3d-triangle.json" background="transparent" 
+        speed="1" style="width: 350px; height:350px;" loop autoplay></dotlottie-player>
+        </div>
+
 </section>
-
-
-
 
 
 <style >
@@ -301,6 +275,8 @@ import BlackStyledButton from './BlackStyledButton.astro';
 <script>
     import { gsap } from 'gsap';
     import { ScrollTrigger } from "gsap/ScrollTrigger";
+    import splitType from 'split-type';
+
 
     let tl = gsap.timeline();
 
@@ -327,13 +303,6 @@ import BlackStyledButton from './BlackStyledButton.astro';
         y: 70,
          duration: 0.2,
         ease: "power1.inOut",
-        scrollTrigger: {
-            trigger: ".services-line-1",
-            start: 'top bottom',
-            end: 'bottom center',
-            scrub: 1,
-            markers: true,
-        }
     },{
         autoAlpha: 1,
         y: 0,
@@ -352,23 +321,23 @@ import BlackStyledButton from './BlackStyledButton.astro';
     var servicesAnimation2 = tl
     .fromTo('.services-line-2', {
         autoAlpha: 0,
-        y: 40,
+        y: 70,
          duration: 0.5,
         ease: "power1.inOut",
     },{
         autoAlpha: 1,
         y: 0,
-        duration: 0.5,
+        duration: 2,
         ease: "power1.inOut",
         stagger: {
-            each: 0.1,
+            each: 0.32,
             from: 'start',
             grid: 'auto',
             ease: 'power2.inOut',
         },
         scrollTrigger: {
             trigger: ".services-line-2",
-            start: 'top bottom',
+            start: 'top 90%',
             end: 'bottom 60%',
             scrub: 0.2,
             markers: true,
@@ -403,7 +372,6 @@ import BlackStyledButton from './BlackStyledButton.astro';
     const tl2 = gsap.timeline({
     scrollTrigger: {
         trigger: '.services-section',
-        // pin: true,
         start: 'top top',
         end: 'bottom top',
         scrub: 1,
@@ -420,28 +388,35 @@ import BlackStyledButton from './BlackStyledButton.astro';
     })
     tl2.to('.services-section', {
     marginBottom: -15,
-    stagger: .5,
+    stagger: .1,
     }, '<')
 
+    
+    const ourText = new splitType('.heading-1', { types: 'chars' })
+    const chars = ourText.chars
 
-    // var servicesAnimation = tl
-    // .to('.services-line-1', {
-    //     scale: 2, duration: 0.2, ease: "power1.inOut", 
-    //     scrollTrigger: {
-    //         trigger: ".services-line-1",
-    //         pin: true,
-    //         start: 'top center',
-    //         end: `bottom center`,
-    //         scrub: 10,
-    //         markers: true,
-            
-    //     }
-    // });
-    const tl3 = gsap.timeline();
-
-   
-
-   
+    
+    tl.fromTo(
+    chars,
+    { 
+        y: 100,
+        opacity: 0
+    },
+    {
+        y: 0,
+        opacity: 1,
+        stagger: 0.3,
+        duration: 6,
+        ease: 'power2.out',
+        scrollTrigger: {
+            trigger: ".heading-1",
+            start: 'top 90%',
+            end: 'bottom 60%',
+            scrub: 1,
+            markers: true,
+        }
+    }, 
+    );
 
 </script>
 

@@ -8,6 +8,8 @@ import logo from '../images/logo-with-a-dot.png';
 import decoration from '../images/9(WHITE).png';
 import sendArrow from '../images/Arrow-4.png';
 
+import arrow from '../images/Arrow-Scroll-3.png';
+
 
 export const Footer = () => {
   return (
@@ -34,7 +36,7 @@ export const Footer = () => {
                         <p className=' font-glancyrThin text-xs'>© 2024 ICYSTUDIO Ltd dba Icy Studio. All rights reserved.</p>
                     </div>
                     <button className="btn border-none h-8 w-48 text-base sm:h-16 sm:w-[430px] text-center sm:text-4xl">
-                                <div className="btn__bg">
+                                <div className="btn__bg" >
                                     <span className="btn__bg__layer btn__bg__layer-first"></span>
                                     <span className="btn__bg__layer btn__bg__layer-second"></span>
                                     <span className="btn__bg__layer btn__bg__layer-third"></span>
@@ -206,18 +208,19 @@ export const Footer = () => {
                              </a>
                          </div>
                        </div>
-
-                       <div className='flex gap-4 items-center'>
-                            <input type='text' placeholder='YOUR EMAIL' className=' p-4 max-w-[200px] max-h-[50px] font-glancyrThin text-xs rounded-full outline outline-2 outline-neon-green bg-transparent'>
-                            </input>
-                            <a href='#'>
-                                <img src={sendArrow.src} alt='sendArrow' className='w-[60px] h-[55px]'></img>
-                            </a>
-                       </div>
-
-
+                            <div className='flex gap-4 items-center'>
+                                <input type='text' placeholder='YOUR EMAIL' className=' p-4 max-w-[200px] max-h-[50px] font-glancyrThin text-xs rounded-full outline outline-2 outline-neon-green bg-transparent'>
+                                </input>
+                                {/* <a href='#'>
+                                    <img src={sendArrow.src} alt='sendArrow' className='w-[60px] h-[55px]'></img>
+                                </a> */}
+                                <button className="rounded-full size-12 overflow-hidden object-cover bg-neon-green" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="69px" height="43px" xmlnsXlink="http://www.w3.org/1999/xlink">
+                                        <g><path fill="#f7f7f7" d="M 17.5,3.5 C 29.1704,3.72828 40.837,4.06162 52.5,4.5C 52.5,15.8333 52.5,27.1667 52.5,38.5C 49.1667,38.5 45.8333,38.5 42.5,38.5C 42.6662,32.4908 42.4995,26.4908 42,20.5C 35.4679,26.6975 29.3013,33.1975 23.5,40C 20.3578,39.9122 17.8578,38.4122 16,35.5C 15.3333,34.8333 15.3333,34.1667 16,33.5C 22.5,27 29,20.5 35.5,14C 29.5092,13.5005 23.5092,13.3338 17.5,13.5C 17.5,10.1667 17.5,6.83333 17.5,3.5 Z"/></g>
+                                        </svg>
+                                </button>
+                            </div>
                     </div>
-
                 </div>
                 <div className='w-[50%] flex items-end justify-center'>
                     <img src={animation.src} alt='animation' className='w-[500px]'></img>
