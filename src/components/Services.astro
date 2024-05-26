@@ -55,147 +55,45 @@ import BlackStyledButton from './BlackStyledButton.astro';
 </div>
 
 
-<section class=" services-section h-auto px-4 pb-10 sm:px-20 sm:mb-60 sm:py-20 mb-4 sm:pb-0 flex flex-col ">
     
-    <div class="flex flex-col sm:flex-row h-auto gap-8 sm:gap-0 text ">
-        <div class="sm:w-2/5 w-full flex items-center justify-center h-full z-0  services-img-1 ">
-            <Image class=" w-[400px] sm:w-[800px]   " src={animate2} alt=""/>
-        </div>
-        <div class=" sm:w-3/5 flex flex-col gap-3 justify-center items-center  ">
-            <div class="flex gap-4 sm:gap-14 text-center w-full services-line-2">
-                <h1 class=" heading-1 text-right w-[30%] sm:w-1/3 font-glancyrRegular text-[10px] sm:text-3xl">
-                    WEBSITE <br> DEVELOPMENT
-                </h1>
-                  <p class="text-left w-[70%] sm:w-2/3 font-glancyrThin text-[10px] mb-4 sm:mb-8 sm:text-2xl box-shadow6 ">
-                    Combining unique design and rich technology we build 
-                    digital products exactly as they were designed, without shortcuts or any
-                    simplifications which makes us <span class=" text-neon-green">STAND OUT!</span>
-                  </p>
-            </div>
-            <div class="flex gap-4 sm:gap-14 text-center w-full services-line-2 ">
-                <h1 class=" text-right w-[20%] sm:w-1/3 font-glancyrRegular text-[10px] sm:text-base">
-                    AREAS
-                </h1>
-                <div class="flex gap-4 flex-col pr-0 sm:pr-32 w-[80%] sm:w-2/3 text-[7px] sm:text-xl">
-                    <div class="text-left w-full justify-between flex items-center font-glancyrThin ">
-                        <StyledButon text="E-COMMERCE" />
-                        <Image class="w-10 h-3 sm:w-16 sm:h-6 " src={doubleArrow} alt=""></Image>
-                        <StyledButon text="FINANCE" />
-                        <StyledButon text="EDUCATION" />
-                    </div>
-                    <div class="text-left w-full justify-between  flex items-center font-glancyrThin  ">
-                        <StyledButon text="SOCIAL" />
-                        <StyledButon text="ENTERTAINMENT" />
-                        <Image class=" w-10 h-3 sm:w-16 sm:h-6" src={doubleArrow} alt=""></Image>
-                        <StyledButon text="MEDICINE" />
-                    </div>
-                    <div class="text-left w-full justify-between  flex font-glancyrThin   ">
-                        <StyledButon text="GAMES" />
-                        <StyledButon text="FASHION" />
-                        <StyledButon text="ARTIFICAL INTELLIGENCE" />
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section class=" services-sections h-auto px-4 pb-10 sm:px-20 sm:mb-60 sm:py-20 mb-4 sm:pb-0 flex flex-col ">
         
-    </div>
-
-</section>
-
-<section class=" services-section pb-48 h-auto bg-white gap-4 pt-12  px-4 sm:px-20 flex flex-col rounded-[5rem] overflow-hidden rounded-b-none ">
-
-    <div class=" flex justify-end text">
-        <dotlottie-player  src="src/assets/videos/pen-services.json" background="transparent" 
-            speed="1" style="width: 303px; height:303px" loop autoplay></dotlottie-player>
-    </div>
-    
-    <div class="flex flex-col sm:flex-row gap-20 h-auto text sm:mb-40 ">
-        <div class="sm:w-[52%] h-full flex-col items-center z-0 text-black text-left ">
-            <div class=" font-glancyrRegular text-base mb-2 sm:mb-8 sm:text-3xl"> 
-                TECHNICAL DESIGN
-              </div>
-              <p class=" font-glancyrThin text-base mb-4 sm:mb-8 sm:text-2xl box-shadow6 ">
-                Building digital products from scratch is a fantastic team adventure! 
-                Each member adds their own special touch to the project, 
-                and it's super important that we all gel together. 
-                Having established routines and a tightly-knit team are our secret ingredients to success & don't even get us started on design
-                 - IT’S OUR EVERYTHING! A good design can make your brand <span class=" text-blush-red">Bloom</span>  and become <span class=" text-blush-red">Irresistible!</span>
-              </p>
-        </div>
-        <div class=" sm:w-[48%] flex sm:flex-col justify-center items-center ">
-            <div class="flex-col flex pt-8 gap-2 text-center w-full ">
-                <h1 class=" text-left text-black mb-5 sm:w-1/3 font-glancyrRegular sm:text-base">
-                    AREAS
-                </h1>
-                <div class="flex gap-3 flex-col ">
-                    <div class="text-left w-full gap-4 flex items-center font-glancyrThin text-xs sm:text-xl">
-                        <BlackStyledButton text="UI/UX DESIGN" />
-                        <BlackStyledButton text="VISUAL-IDENTITY" />
-                        <BlackStyledButton text="3D-VISUALS" />
-                    </div>
-                    <div class="text-left w-full gap-4 flex items-center font-glancyrThin text-xs sm:text-xl ">
-                        <BlackStyledButton text="MOTION-DESIGN" />
-                        <Image class=" w-40 h-6 " src={blackArrow} alt=""></Image>
-                        <BlackStyledButton text="MOBILE APP DESIGN" />
-                    </div>
-                    <div class="text-left w-full gap-4 flex font-glancyrThin text-xs sm:text-xl  ">
-                        <BlackStyledButton text="PRODUCT DESIGN" />
-                        <BlackStyledButton text="UX-WIREFRAME" />
-                        <BlackStyledButton text="DESIGN SYSTEMS" />
-                    </div>
-                </div>
+        <div class="flex flex-col sm:flex-row h-auto gap-8 sm:gap-0 text ">
+            <div class="sm:w-2/5 w-full flex items-center justify-center h-full z-0  services-img-1 ">
+                <Image class=" w-[400px] sm:w-[800px]   " src={animate2} alt=""/>
             </div>
-            
-        </div>
-    </div>
-</section>
-
-<div class="bg-white  ">
-    <section class=" services-section h-auto sm:py-28 px-4 pb-10 sm:px-20 sm:pb-0 flex flex-col bg-black rounded-[5rem] overflow-hidden rounded-b-none ">  
-        
-        <div class="flex flex-col sm:flex-row h-auto text  ">
-            <div class="sm:w-[30%] h-full z-0  ">
-                <dotlottie-player src="src/assets/videos/hour-glass-services.json" background="transparent" 
-                speed="1" style="width: 800px; height:800px;" loop autoplay></dotlottie-player>
-            </div>
-            <div class=" sm:w-[70%] flex flex-col gap-3 justify-center items-center  ">
-                <div class="flex gap-4 sm:gap-14 text-center w-full ">
-                    <h1 class=" text-right w-[30%] sm:w-1/3 font-glancyrRegular text-[10px] sm:text-3xl">
-                        CREATIVE <br> DESIGN
+            <div class=" sm:w-3/5 flex flex-col gap-3 justify-center items-center  ">
+                <div class="flex gap-4 sm:gap-14 text-center w-full services-line-2">
+                    <h1 class=" heading-1 text-right w-[30%] sm:w-1/3 font-glancyrRegular text-[10px] sm:text-3xl">
+                        WEBSITE <br> DEVELOPMENT
                     </h1>
-                    <p class="text-left w-[70%] sm:w-2/3 font-glancyrThin text-[10px] mb-4 sm:mb-8 sm:text-2xl box-shadow6 ">
-                        Crafting a creative graphic design from the ground up is an amazing collaborative effort! 
-                        Our collective expertise is invaluable, and it is critical that we all work well together. 
-                        Our secret formula to success is an efficient workflow and again
-                        let's not forget whether its brand identity or packaging design 
-                        <span class=" text-neon-green">— DESIGN MEANS EVERYTHING TO US!</span>
-                         Your brand could emerge and become 
-                        irresistible with an appealing design! 
+                      <p class="text-left w-[70%] sm:w-2/3 font-glancyrThin text-[10px] mb-4 sm:mb-8 sm:text-2xl box-shadow6 ">
+                        Combining unique design and rich technology we build 
+                        digital products exactly as they were designed, without shortcuts or any
+                        simplifications which makes us <span class=" text-neon-green">STAND OUT!</span>
                       </p>
                 </div>
-                <div class="flex gap-4 sm:gap-14 text-center w-full services-line-2  ">
+                <div class="flex gap-4 sm:gap-14 text-center w-full services-line-2 ">
                     <h1 class=" text-right w-[20%] sm:w-1/3 font-glancyrRegular text-[10px] sm:text-base">
                         AREAS
                     </h1>
-                    <div class="= flex gap-4 flex-col sm:w-2/3 text-[7px] sm:text-xl">
-                        <div class="text-left w-full gap-4 flex items-center font-glancyrThin ">
-                            <StyledButon text="BRAND-IDENTITY" />
-                            <StyledButon text="LOGO'S" />
-                            <StyledButon text="PACKAGING" />
-                            <StyledButon text="BRAND GUIDES" />
+                    <div class="flex gap-4 flex-col pr-0 sm:pr-32 w-[80%] sm:w-2/3 text-[7px] sm:text-xl">
+                        <div class="text-left w-full justify-between flex items-center font-glancyrThin ">
+                            <StyledButon text="E-COMMERCE" />
+                            <Image class="w-10 h-3 sm:w-16 sm:h-6 " src={doubleArrow} alt=""></Image>
+                            <StyledButon text="FINANCE" />
+                            <StyledButon text="EDUCATION" />
                         </div>
-                        <div class="text-left w-full gap-4  flex items-center font-glancyrThin  ">
-                            <StyledButon text="SOCIAL-MEDIA IDENTITY" />
-                            <StyledButon text="STATIONERY" />
-                            <StyledButon text="BROCHURES" />
-                            <StyledButon text="ANIMATION" />
+                        <div class="text-left w-full justify-between  flex items-center font-glancyrThin  ">
+                            <StyledButon text="SOCIAL" />
+                            <StyledButon text="ENTERTAINMENT" />
+                            <Image class=" w-10 h-3 sm:w-16 sm:h-6" src={doubleArrow} alt=""></Image>
+                            <StyledButon text="MEDICINE" />
                         </div>
-                        <div class="text-left w-full gap-4 flex font-glancyrThin   ">
-                            <StyledButon text="VFX/SFX EDITS" />
-                            <StyledButon text="POSTERS" />
-                            <StyledButon text="ILLUSTRATIONS" />
-                            <StyledButon text="AD-CREATIVES" />
-
+                        <div class="text-left w-full justify-between  flex font-glancyrThin   ">
+                            <StyledButon text="GAMES" />
+                            <StyledButon text="FASHION" />
+                            <StyledButon text="ARTIFICAL INTELLIGENCE" />
                         </div>
                     </div>
                 </div>
@@ -204,65 +102,170 @@ import BlackStyledButton from './BlackStyledButton.astro';
         </div>
     
     </section>
-</div>
-
-<section class=" services-section h-auto bg-white pt-4 pb-28  px-4 sm:px-20 flex flex-col rounded-[5rem] overflow-hidden rounded-b-none  ">
-
-    <div class=" flex justify-start py-12 text">
-        <dotlottie-player src="src/assets/videos/bird-services-section.json" background="transparent" 
-        speed="1" style="width: 182px; height:182px;" loop autoplay></dotlottie-player>
-    </div>
     
-    <div class="flex flex-col sm:flex-row gap-28 h-auto text ">
-        <div class="sm:w-[52%] h-full flex-col items-center z-0 text-black text-left ">
-            <div class=" font-glancyrRegular text-base mb-2 sm:mb-8 sm:text-3xl"> 
-                USER-CENTRIC MARKETING
-              </div>
-              <p class=" font-glancyrThin text-base mb-4 sm:mb-8 sm:text-2xl box-shadow6 ">
-                Discover marketing centered around your audience. At Icy Studio, 
-                we place a high value on learning about customer needs and 
-                developing methods that work. Our knowledgeable staff professionally 
-                provides tailored solutions, assisting you in reaching your goals. 
-                With our experience, improve your online visibility, maximize interaction, 
-                and increase <span class=" text-blush-red">ROI</span>. Together, let's create campaigns that leave a lasting impression
-                 and measurable outcomes. Get in touch with us right now to start this
-                <span class=" text-blush-red">rewarding </span>journey together! 
-              </p>
+    
+    <section data-cursor="pointer" class=" services-sections pb-48 h-auto bg-white gap-4 pt-12  px-4 sm:px-20 flex flex-col rounded-[5rem] overflow-hidden rounded-b-none ">
+    
+        <div class=" flex justify-end text">
+            <dotlottie-player class="services-img-2 " src="src/assets/videos/pen-services.json" background="transparent" 
+                speed="1" style="width: 303px; height:303px" loop autoplay></dotlottie-player>
         </div>
-        <div class=" sm:w-[48%] flex sm:flex-col justify-center items-center ">
-            <div class="flex-col flex pt-8 gap-2 text-center w-full ">
-                <h1 class=" text-left text-black mb-5 sm:w-1/3 font-glancyrRegular sm:text-base">
-                    AREAS
+        
+        <div class="flex flex-col sm:flex-row gap-20 h-auto text sm:mb-40 ">
+            <div class="sm:w-[52%] h-full flex-col items-center z-0 text-black text-left ">
+                <h1 class="heading-2 font-glancyrRegular text-base mb-2 sm:mb-8 sm:text-3xl"> 
+                    TECHNICAL DESIGN 
                 </h1>
-                <div class="flex gap-3 flex-col ">
-                    <div class="text-left w-full gap-4 flex items-center font-glancyrThin text-xs sm:text-xl">
-                        <BlackStyledButton text="UI/UX DESIGN" />
-                        <BlackStyledButton text="VISUAL-IDENTITY" />
-                        <BlackStyledButton text="3D-VISUALS" />
-                    </div>
-                    <div class="text-left w-full gap-4 flex items-center font-glancyrThin text-xs sm:text-xl ">
-                        <BlackStyledButton text="MOTION-DESIGN" />
-                        <Image class=" w-40 h-6 " src={blackArrow} alt=""></Image>
-                        <BlackStyledButton text="MOBILE APP DESIGN" />
-                    </div>
-                    <div class="text-left w-full gap-4 flex font-glancyrThin text-xs sm:text-xl  ">
-                        <BlackStyledButton text="PRODUCT DESIGN" />
-                        <BlackStyledButton text="UX-WIREFRAME" />
-                        <BlackStyledButton text="DESIGN SYSTEMS" />
+                  <p class=" services-line-3 font-glancyrThin text-base mb-4 sm:mb-8 sm:text-2xl box-shadow6 ">
+                    Building digital products from scratch is a fantastic team adventure! 
+                    Each member adds their own special touch to the project, 
+                    and it's super important that we all gel together. 
+                    Having established routines and a tightly-knit team are our secret ingredients to success & don't even get us started on design
+                     - IT’S OUR EVERYTHING! A good design can make your brand <span class=" text-blush-red">Bloom</span>  and become <span class=" text-blush-red">Irresistible!</span>
+                  </p>
+            </div>
+            <div class=" sm:w-[48%] flex sm:flex-col justify-center items-center ">
+                <div class="services-line-3 flex-col flex pt-8 gap-2 text-center w-full ">
+                    <h1 class="  text-left text-black mb-5 sm:w-1/3 font-glancyrRegular sm:text-base">
+                        AREAS
+                    </h1>
+                    <div class=" flex gap-3 flex-col ">
+                        <div class="text-left w-full gap-4 flex items-center font-glancyrThin text-xs sm:text-xl">
+                            <BlackStyledButton text="UI/UX DESIGN" />
+                            <BlackStyledButton text="VISUAL-IDENTITY" />
+                            <BlackStyledButton text="3D-VISUALS" />
+                        </div>
+                        <div class="text-left w-full gap-4 flex items-center font-glancyrThin text-xs sm:text-xl ">
+                            <BlackStyledButton text="MOTION-DESIGN" />
+                            <Image class=" w-40 h-6 " src={blackArrow} alt=""></Image>
+                            <BlackStyledButton text="MOBILE APP DESIGN" />
+                        </div>
+                        <div class="text-left w-full gap-4 flex font-glancyrThin text-xs sm:text-xl  ">
+                            <BlackStyledButton text="PRODUCT DESIGN" />
+                            <BlackStyledButton text="UX-WIREFRAME" />
+                            <BlackStyledButton text="DESIGN SYSTEMS" />
+                        </div>
                     </div>
                 </div>
+                
+            </div>
+        </div>
+    </section>
+    
+    <div class="bg-white  ">
+        <section class=" services-sections h-auto sm:py-28 px-4 pb-10 sm:px-20 sm:pb-20 flex flex-col bg-black rounded-[5rem] overflow-hidden rounded-b-none ">  
+            
+            <div class="flex flex-col sm:flex-row h-auto text  ">
+                <div class=" sm:w-[30%] h-full z-0  ">
+                    <dotlottie-player class="services-img-3" src="src/assets/videos/hour-glass-services.json" background="transparent" 
+                    speed="1" style="width: 800px; height:800px;" loop autoplay></dotlottie-player>
+                </div>
+                <div class=" sm:w-[70%] flex flex-col gap-3 justify-center items-center  ">
+                    <div class="flex gap-4 sm:gap-14 text-center w-full ">
+                        <h1 class="heading-3 text-right w-[30%] sm:w-1/3 font-glancyrRegular text-[10px] sm:text-3xl">
+                            CREATIVE <br> DESIGN
+                        </h1>
+                        <p class="services-line-4 text-left w-[70%] sm:w-2/3 font-glancyrThin text-[10px] mb-4 sm:mb-8 sm:text-2xl box-shadow6 ">
+                            Crafting a creative graphic design from the ground up is an amazing collaborative effort! 
+                            Our collective expertise is invaluable, and it is critical that we all work well together. 
+                            Our secret formula to success is an efficient workflow and again
+                            let's not forget whether its brand identity or packaging design 
+                            <span class=" text-neon-green">— DESIGN MEANS EVERYTHING TO US!</span>
+                             Your brand could emerge and become 
+                            irresistible with an appealing design! 
+                          </p>
+                    </div>
+                    <div class="services-line-4 flex gap-4 sm:gap-14 text-center w-full services-line-2  ">
+                        <h1 class=" text-right w-[20%] sm:w-1/3 font-glancyrRegular text-[10px] sm:text-base">
+                            AREAS
+                        </h1>
+                        <div class="= flex gap-4 flex-col sm:w-2/3 text-[7px] sm:text-xl">
+                            <div class="text-left w-full gap-4 flex items-center font-glancyrThin ">
+                                <StyledButon text="BRAND-IDENTITY" />
+                                <StyledButon text="LOGO'S" />
+                                <StyledButon text="PACKAGING" />
+                                <StyledButon text="BRAND GUIDES" />
+                            </div>
+                            <div class="text-left w-full gap-4  flex items-center font-glancyrThin  ">
+                                <StyledButon text="SOCIAL-MEDIA IDENTITY" />
+                                <StyledButon text="STATIONERY" />
+                                <StyledButon text="BROCHURES" />
+                                <StyledButon text="ANIMATION" />
+                            </div>
+                            <div class="text-left w-full gap-4 flex font-glancyrThin   ">
+                                <StyledButon text="VFX/SFX EDITS" />
+                                <StyledButon text="POSTERS" />
+                                <StyledButon text="ILLUSTRATIONS" />
+                                <StyledButon text="AD-CREATIVES" />
+    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        
+        </section>
+    </div>
+    
+    <section data-cursor="pointer" class=" services-sections h-auto bg-white pt-4 pb-28  px-4 sm:px-20 flex flex-col rounded-[5rem] overflow-hidden rounded-b-none  ">
+    
+        <div class=" flex justify-start py-12 text">
+            <dotlottie-player class="services-img-4" src="src/assets/videos/bird-services-section.json" background="transparent" 
+            speed="1" style="width: 182px; height:182px;" loop autoplay></dotlottie-player>
+        </div>
+        
+        <div class="flex flex-col sm:flex-row gap-28 h-auto text ">
+            <div class="sm:w-[52%] h-full flex-col items-center z-0 text-black text-left ">
+                <div class=" heading-4 font-glancyrRegular text-base mb-2 sm:mb-8 sm:text-3xl"> 
+                    USER-CENTRIC MARKETING
+                  </div>
+                  <p class=" services-line-5 font-glancyrThin text-base mb-4 sm:mb-8 sm:text-2xl box-shadow6 ">
+                    Discover marketing centered around your audience. At Icy Studio, 
+                    we place a high value on learning about customer needs and 
+                    developing methods that work. Our knowledgeable staff professionally 
+                    provides tailored solutions, assisting you in reaching your goals. 
+                    With our experience, improve your online visibility, maximize interaction, 
+                    and increase <span class=" text-blush-red">ROI</span>. Together, let's create campaigns that leave a lasting impression
+                     and measurable outcomes. Get in touch with us right now to start this
+                    <span class=" text-blush-red">rewarding </span>journey together! 
+                  </p>
+            </div>
+            <div class=" sm:w-[48%] flex sm:flex-col justify-center items-center ">
+                <div class=" services-line-5 flex-col flex pt-8 gap-2 text-center w-full ">
+                    <h1 class=" text-left text-black mb-5 sm:w-1/3 font-glancyrRegular sm:text-base">
+                        AREAS
+                    </h1>
+                    <div class="flex gap-3 flex-col ">
+                        <div class="text-left w-full gap-4 flex items-center font-glancyrThin text-xs sm:text-xl">
+                            <BlackStyledButton text="UI/UX DESIGN" />
+                            <BlackStyledButton text="VISUAL-IDENTITY" />
+                            <BlackStyledButton text="3D-VISUALS" />
+                        </div>
+                        <div class="text-left w-full gap-4 flex items-center font-glancyrThin text-xs sm:text-xl ">
+                            <BlackStyledButton text="MOTION-DESIGN" />
+                            <Image class=" w-40 h-6 " src={blackArrow} alt=""></Image>
+                            <BlackStyledButton text="MOBILE APP DESIGN" />
+                        </div>
+                        <div class="text-left w-full gap-4 flex font-glancyrThin text-xs sm:text-xl  ">
+                            <BlackStyledButton text="PRODUCT DESIGN" />
+                            <BlackStyledButton text="UX-WIREFRAME" />
+                            <BlackStyledButton text="DESIGN SYSTEMS" />
+                        </div>
+                    </div>
+                </div>
+                
             </div>
             
         </div>
-        
-    </div>
+    
+        <div class=" flex justify-end text">
+            <dotlottie-player class="services-img-4" src="src/assets/videos/3d-triangle.json" background="transparent" 
+            speed="1" style="width: 350px; height:350px;" loop autoplay></dotlottie-player>
+            </div>
+    
+    </section>
 
-    <div class=" flex justify-end text">
-        <dotlottie-player src="src/assets/videos/3d-triangle.json" background="transparent" 
-        speed="1" style="width: 350px; height:350px;" loop autoplay></dotlottie-player>
-        </div>
-
-</section>
 
 
 <style >
@@ -291,7 +294,6 @@ import BlackStyledButton from './BlackStyledButton.astro';
             pin: true,
             end: `+=${innerHeight * 1.3}`,
             scrub: 10,
-            markers: true,
             
         }
     });
@@ -313,110 +315,200 @@ import BlackStyledButton from './BlackStyledButton.astro';
             start: 'top bottom',
             end: 'bottom center',
             scrub: 1,
-            markers: true,
         }
     });
+    
 
-    //services text-reveal animation
-    var servicesAnimation2 = tl
-    .fromTo('.services-line-2', {
-        autoAlpha: 0,
-        y: 70,
-         duration: 0.5,
-        ease: "power1.inOut",
-    },{
-        autoAlpha: 1,
-        y: 0,
-        duration: 2,
-        ease: "power1.inOut",
-        stagger: {
-            each: 0.32,
-            from: 'start',
-            grid: 'auto',
-            ease: 'power2.inOut',
+        // const ourText = new splitType('.heading-1', { types: 'chars' })
+        // const chars = ourText.chars
+
+
+        // //services text-reveal animation
+        // tl
+        // .fromTo('.services-line-2', {
+        //     autoAlpha: 0,
+        //     y: 70,
+        //     duration: 0.5,
+        //     ease: "power1.inOut",
+        // },{
+        //     autoAlpha: 1,
+        //     y: 0,
+        //     duration: 2,
+        //     ease: "power1.inOut",
+        //     stagger: {
+        //         each: 0.32,
+        //         from: 'start',
+        //         grid: 'auto',
+        //         ease: 'power2.inOut',
+        //     },
+        //     scrollTrigger: {
+        //         trigger: '.services-line-2',
+        //         start: 'top 90%',
+        //         end: 'bottom 50%',
+        //         scrub: 0.3,
+        //         markers: true,
+        //     }
+        // },0).fromTo('.services-img-1', {
+        //     autoAlpha: 0,
+        //     y: 15,
+        //     scale: 0.90,
+        //     duration: 0.5,
+        //     ease: "power1.inOut",
+        // },{
+        //     autoAlpha: 1,
+        //     y: 0,
+        //     scale: 1,
+        //     duration: 0.5,
+        //     ease: "power1.inOut",
+        //     scrollTrigger: {
+        //         trigger: '.services-img-1',
+        //         start: 'top bottom',
+        //         end: 'bottom 80%',
+        //         scrub: 0.2,
+        //         markers: true,
+        //     }
+        // }).fromTo(
+        // chars,
+        // { 
+        //     y: 100,
+        //     opacity: 0
+        // },
+        // {
+        //     y: 0,
+        //     opacity: 1,
+        //     stagger: 0.3,
+        //     duration: 6,
+        //     ease: 'power2.out',
+        //     scrollTrigger: {
+        //         trigger: '.heading-1',
+        //         start: 'top 90%',
+        //         end: 'bottom 50%',
+        //         scrub: 1,
+        //         markers: true,
+        //     }
+        // }, 
+        // );
+        
+
+
+// Function to create scroll-triggered animation timeline
+function createScrollAnimation(target:string, img:string, heading:string) {
+    // Create a timeline
+    const tl = gsap.timeline();
+
+    const ourText = new splitType(heading, { types: 'chars' })
+    const chars = ourText.chars
+
+    console.log(heading, ':', chars);
+
+
+        //services text-reveal animation
+        // first animate text. then image then heading
+        tl
+        .fromTo(target, {
+            autoAlpha: 0,
+            y: 70,
+            duration: 0.5,
+            ease: "power1.inOut",
+        },{
+            autoAlpha: 1,
+            y: 0,
+            duration: 2,
+            ease: "power1.inOut",
+            stagger: {
+                each: 0.32,
+                from: 'start',
+                grid: 'auto',
+                ease: 'power2.inOut',
+            },
+            scrollTrigger: {
+                trigger: target,
+                start: 'top 90%',
+                end: 'bottom 50%',
+                scrub: 0.3,
+            }
+        },0).fromTo(img, {
+            autoAlpha: 0,
+            y: 30,
+            scale: 0.80,
+            duration: 0.5,
+            ease: "power1.inOut",
+        },{
+            autoAlpha: 1,
+            y: 0,
+            scale: 1,
+            duration: 0.5,
+            ease: "power1.inOut",
+            scrollTrigger: {
+                trigger: img,
+                start: 'top bottom',
+                end: 'bottom 80%',
+                scrub: 0.2,
+            }
+        },0).fromTo(
+        chars,
+        { 
+            y: 100,
+            opacity: 0
         },
-        scrollTrigger: {
-            trigger: ".services-line-2",
-            start: 'top 90%',
-            end: 'bottom 60%',
-            scrub: 0.2,
-            markers: true,
-        }
-    });
+        {
+            y: 0,
+            opacity: 1,
+            stagger: 0.3,
+            duration: 6,
+            ease: 'power2.out',
+            scrollTrigger: {
+                trigger: heading,
+                start: 'top 90%',
+                end: 'bottom 50%',
+                scrub: 1,
+            }
+        }, 
+        );
+        
+
+    return tl;
+}
+
+const Services2Animation = createScrollAnimation('.services-line-2', '.services-img-1', '.heading-1');
+const Services3Animation = createScrollAnimation('.services-line-3', '.services-img-2', '.heading-2');
+const Services4Animation = createScrollAnimation('.services-line-4', '.services-img-3', '.heading-3');
+const Services5Animation = createScrollAnimation('.services-line-5', '.services-img-4', '.heading-4');
+
+
+
+
+   
 
     //services image animation
-    tl.fromTo('.services-img-1', {
-        autoAlpha: 0,
-        y: 15,
-        scale: 0.90,
-         duration: 0.5,
-        ease: "power1.inOut",
-    },{
-        autoAlpha: 1,
-        y: 0,
-        scale: 1,
-        duration: 0.5,
-        ease: "power1.inOut",
-        scrollTrigger: {
-            trigger: ".services-img-1",
-            start: 'top bottom',
-            end: 'bottom 60%',
-            scrub: 0.2,
-            markers: true,
-        }
-    });
+    
 
 
     // services section overlap sliding animation
 
-    const tl2 = gsap.timeline({
-    scrollTrigger: {
-        trigger: '.services-section',
-        start: 'top top',
-        end: 'bottom top',
-        scrub: 1,
-        markers: true,
-        // ease: 'linear',
-        }
-    })
+    // const tl2 = gsap.timeline({
+    // scrollTrigger: {
+    //     trigger: '.services-section',
+    //     start: 'top top',
+    //     end: 'bottom top',
+    //     scrub: 1,
+    //     // pin: true,
+    //     // ease: 'linear',
+    //     }
+    // })
 
-    tl2.to('.services-section .text', {
-    height: 0,
-    paddingBottom: 0,
-    opacity: 0,
-    stagger: .5,
-    })
-    tl2.to('.services-section', {
-    marginBottom: -15,
-    stagger: .1,
-    }, '<')
-
-    
-    const ourText = new splitType('.heading-1', { types: 'chars' })
-    const chars = ourText.chars
+    // tl2.to('.services-sections .text', {
+    // height: 0,
+    // paddingBottom: 0,
+    // opacity: 0,
+    // stagger: .5,
+    // })
+    // tl2.to('.services-section', {
+    // marginBottom: -15,
+    // stagger: .1,
+    // }, '<')
 
     
-    tl.fromTo(
-    chars,
-    { 
-        y: 100,
-        opacity: 0
-    },
-    {
-        y: 0,
-        opacity: 1,
-        stagger: 0.3,
-        duration: 6,
-        ease: 'power2.out',
-        scrollTrigger: {
-            trigger: ".heading-1",
-            start: 'top 90%',
-            end: 'bottom 60%',
-            scrub: 1,
-            markers: true,
-        }
-    }, 
-    );
 
 </script>
 

@@ -17,15 +17,12 @@ import { Image } from 'astro:assets';
 
 <div class="relative h-screen">
     <video class="absolute z-0 object-cover w-full h-full" src={fractal2} autoplay loop muted></video>
-
     <div class="h-auto px-10 pb-10 pt-20 sm:pt-36 sm:px-36 sm:pb-0 flex flex-col ">
         
             <div class=" h-auto sm:flex sm:flex-col justify-center">
-                
                 <div class=" relative h-auto flex justify-center mb-8">
-                    
                     <div class="relative z-10 flex w-full flex-col items-center gap-4 ">
-                        <div class="text-9xl flex gap-32 pr-80 items-center hero-line-1">
+                        <div class="text-2xl sm:text-9xl flex gap-32 pr-80 items-center hero-line-1">
                             <span class=" font-glancyrThin box-shadow2">WE</span> 
                             <span class=" font-glancyrLightItalic box-shadow2"><div data-cursor="pointer2" class="flex p-0 justify-center ">
                                 <button class="btn bg-transparent h-8 w-48 text-base sm:h-40 sm:w-[650px] overflow-hidden sm:text-9xl">
@@ -39,10 +36,10 @@ import { Image } from 'astro:assets';
                                 </button>
                             </div></span>
                         </div>
-                        <div class="text-9xl flex gap-2 pl-72 items-center hero-line-1 ">
-                            <span class=" mr-6 mb-6">
+                        <div class=" text-6xl sm:text-9xl flex gap-2 pl-72 items-center hero-line-1 ">
+                            <span class=" w-[35px] h-[35px] sm:w-[65px] sm:h-[66px] mr-6 mb-6">
 
-                                <svg width="65" height="66" viewBox="0 0 65 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg viewBox="0 0 65 66" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M37.5512 5.24426L60.7989 33.8825L47.6234 49.3495L37.5512 61.1734" stroke="#A7EF37" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
                                     <path d="M4.26314 4.80627L27.5109 33.4445L14.3354 48.9116L4.26314 60.7354" stroke="#A7EF37" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
@@ -51,13 +48,13 @@ import { Image } from 'astro:assets';
                             </span> 
                             <span class=" font-glancyrThin gradient-main text-transparent bg-clip-text ">RE<span class=" font-glancyrThinItalic">M</span>ARKABLE</span>
                         </div>
-                        <div class="text-9xl flex gap-5 pr-[19rem] hero-line-1">
+                        <div class="text-6xl sm:text-9xl flex gap-5 pr-[19rem] hero-line-1">
                             <span class=" font-glancyrThin box-shadow3 ">DIGITAL</span> 
                             <span>
-                                <Image class="h-24 w-36" src={globe} alt=""/>
+                                <Image class=" h-12 w-18 sm:h-24 sm:w-36" src={globe} alt=""/>
                             </span>
                         </div>
-                        <div class="flex text-9xl gap-6">
+                        <div class="flex text-6xl sm:text-9xl gap-6">
                             <span class=" font-glancyrThin ">
                                 <div class="sm:flex sm:justify-center sm:items-center text-right ">
                                     <div class=" font-glancyrLight text-xl sm:text-2xl mb-6 sm:mb-16 hero-line-5 ">ICY STUD<span 
@@ -135,22 +132,6 @@ import { Image } from 'astro:assets';
             <div class="mb-0 hero-line-2 ">
                 <div class=" flex sm:left-[900px] relative top-4 z-10 sm:top-12 ">
                     <div class="relative z-20 sm:top-16 ">
-                        <!-- <svg width="239" height="186" viewBox="0 0 239 186" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_80_3996)">
-                            <mask id="mask0_80_3996" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="239" height="186">
-                            <path d="M194.136 -1.02501e-06L0 97.2711L44.3481 185.782L238.485 88.5113L194.136 -1.02501e-06Z" fill="white"/>
-                            </mask>
-                            <g mask="url(#mask0_80_3996)">
-                            <path d="M49.3659 136.72C49.3659 136.72 102.922 131.814 127.804 99.8798C140.122 84.0701 127.61 69.4367 110.537 76.1853C96.4571 81.7512 85.9463 94.942 82.4752 110.903C74.818 146.114 117.611 145.178 152.511 106.776C182.929 73.3041 179.978 73.7382 197.003 64.7978" stroke="#FAFAFA" stroke-width="3"/>
-                            <path d="M206.906 59.5115L196.043 74.34L188.109 60.4647L206.906 59.5115Z" fill="#FAFAFA"/>
-                            </g>
-                            </g>
-                            <defs>
-                            <clipPath id="clip0_80_3996">
-                            <rect width="217.142" height="99" fill="white" transform="translate(0 97.2711) rotate(-26.6129)"/>
-                            </clipPath>
-                            </defs>
-                            </svg> -->
                             <dotlottie-player  src="src/assets/videos/we-turn.json" background="transparent" 
                     speed="1" style="width: 239px; height:186px; transform: rotate(-25deg); " loop autoplay></dotlottie-player>
                             
@@ -602,7 +583,7 @@ import { Image } from 'astro:assets';
         duration: 1.6,
         ease: "power4.out"
     })
-    .fromTo(".hero-button-1", {autoAlpha: 0, y: 250}, {autoAlpha: 1, y:0, duration: 1.6, ease: "back.out"}, 1.6)
+    .fromTo(".hero-button-1", {autoAlpha: 0, y: 250}, {autoAlpha: 1, y:0, duration: 1.6, ease: "back.out"}, 1.43)
     .fromTo('.hero-line-5', {
         
         autoAlpha: 0,
@@ -617,7 +598,7 @@ import { Image } from 'astro:assets';
         autoAlpha: 1,
         y: 0,
         duration: 1.5,
-    });
+    },2.0);
 
 
    // hero-line-2 we turn customer line animation
@@ -642,7 +623,6 @@ import { Image } from 'astro:assets';
             start: 'top 80%',
             end: 'bottom 70%',
             scrub: 1,
-            markers: true,
         }
     }).fromTo('.hero-line-3',{
         autoAlpha: 0,
@@ -665,7 +645,6 @@ import { Image } from 'astro:assets';
             start: 'top 80%',
             end: 'bottom 70%',
             scrub: 1,
-            markers: true,
         }
     })
 

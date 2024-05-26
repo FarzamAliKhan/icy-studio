@@ -6,9 +6,7 @@ import backdrop from '../images/abstract-sphere.png';
 import animation from '../images/Animation-Display-8.png';
 import logo from '../images/logo-with-a-dot.png';
 import decoration from '../images/9(WHITE).png';
-import sendArrow from '../images/Arrow-4.png';
 
-import arrow from '../images/Arrow-Scroll-3.png';
 
 
 export const Footer = () => {
@@ -225,7 +223,25 @@ export const Footer = () => {
                 <div className='w-[50%] flex items-end justify-center'>
                     <img src={animation.src} alt='animation' className='w-[500px]'></img>
                 </div>
-                <div className='w-[25%] flex items-end justify-center '>
+                <div className='w-[25%] flex items-end justify-center flex-col '>
+                <button className="btn border-none h-8 w-48 text-base sm:h-16 sm:w-[330px] text-center sm:text-4xl">
+                                <div className="btn__bg">
+                                    <span className="btn__bg__layer btn__bg__layer-first"></span>
+                                    <span className="btn__bg__layer btn__bg__layer-second"></span>
+                                    <span className="btn__bg__layer btn__bg__layer-third"></span>
+                                </div>
+                                <span className="btn__text-out text-white font-glancyrLight">+1 222 222 222</span>
+                                <span className="btn__text-in text-white font-glancyrLight">+1 222 222 222</span>
+                            </button>
+                <button className="btn border-none h-8 w-48 text-base sm:h-16 sm:w-[430px] text-center sm:text-4xl">
+                                <div className="btn__bg" >
+                                    <span className="btn__bg__layer btn__bg__layer-first"></span>
+                                    <span className="btn__bg__layer btn__bg__layer-second"></span>
+                                    <span className="btn__bg__layer btn__bg__layer-third"></span>
+                                </div>
+                                <span className="btn__text-out text-white font-glancyrLight">INFO@ICYSTUDIO.CO</span>
+                                <span className="btn__text-in text-white font-glancyrLight">INFO@ICYSTUDIO.CO</span>
+                    </button>
                     <svg width="338" height="338" viewBox="0 0 238 238" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
                 <rect width="238" height="238" fill="url(#pattern0_42_409)"/>
                 <defs>
