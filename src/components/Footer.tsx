@@ -13,7 +13,8 @@ export const Footer = () => {
   return (
     <>
         <footer className=''>
-            <ul className=' font-glancyrLight text-5xl border-solid border-t-[1px] border-grey-stroke mb-20 '>
+
+            <ul className=' font-glancyrLight text-3xl sm:text-5xl border-solid border-t-[1px] border-grey-stroke mb-20 '>
                 <FooterLink href="https://www.linkedin.com/" title='INSTAGRAM'>INSTAGRAM</FooterLink>
                 <FooterLink href="https://www.linkedin.com/" title='LINKEDIN'><div>LINKED<span className=" text-neon-green">IN</span></div></FooterLink>
                 <FooterLink href="https://www.linkedin.com/" title='FACEBOOK'>FACEBOOK</FooterLink>
@@ -22,9 +23,9 @@ export const Footer = () => {
                 <FooterLink href="https://www.linkedin.com/" title='BEHANCE'><div>BEHANC<span className=" text-neon-green">E</span></div></FooterLink>
             </ul>
 
-
-            <div className='flex w-full p-10 pl-20 mb-12'>
-                <div className=' flex flex-col justify-between w-1/3 gap-28 '>
+            
+            <div className='flex flex-col sm:flex-row w-full gap-10 p-5 sm:p-10 sm:pl-20 mb-12'>
+                <div className=' flex flex-col justify-between sm:w-1/3 gap-10 sm:gap-28 '>
                     <div className='flex flex-col gap-2' >
                         <div className='flex gap-1'>
                             <img src={location.src} alt='location' className='w-6 h-6'></img>
@@ -48,7 +49,7 @@ export const Footer = () => {
                     </h1>  
                 </div>
 
-                <div className=' flex flex-col justify-between w-1/3 gap-28 pl-28 '>
+                <div className=' flex flex-col sm:w-1/3 gap-10 sm:gap-28 sm:pl-28 '>
                     <div className='flex flex-col gap-2' >
                         <div className='flex gap-1'>
                             <img src={location.src} alt='location' className='w-6 h-6'></img>
@@ -74,51 +75,29 @@ export const Footer = () => {
                 </div>
             </div>
 
-            <div className='relative flex h-[830px] mb-32'>
+            <div className='relative flex h-[430px] sm:h-[830px] mb-10 sm:mb-32'>
                 <img  src={backdrop.src} alt='backdrop' className='absolute z-0 object-cover w-full h-full'></img>
 
                 <div className='relative flex z-10 w-full h-full'>
 
-                    <div className=' w-[25%] flex flex-col justify-end gap-5 p-10 h-full '>
+                    <div className=' w-[25%] flex flex-col justify-end gap-5 pl-5 pb-5 p-0 sm:p-10 h-full '>
 
                         <a href='#'>
-                            <h2 className=' underline font-glancyrThin text-white text-xl'>
+                            <h2 className=' underline font-glancyrThin text-white  sm:text-xl text-xs'>
                                 Privacy Policy
                             </h2>
                         </a>
-{/* 
-                        <button className="btn bg-transparent border-none h-8 w-48 text-base sm:h-16 sm:w-[230px] text-center sm:text-2xl">
-                            <div className="btn__bg bg-transparent">
-                                <span className="btn__bg__layer bg-transparent btn__bg__layer-first"></span>
-                                <span className="btn__bg__layer bg-transparent btn__bg__layer-second"></span>
-                                <span className="btn__bg__layer bg-transparent btn__bg__layer-third"></span>
-                            </div>
-                            <span className="btn__text-out text-white font-glancyrLight">+1 222 222 222</span>
-                            <span className="btn__text-in text-white font-glancyrLight">+1 222 222 222</span>
-                        </button>
-
-
-                        <button className="btn border-none bg-transparent h-8 w-48 text-base sm:h-16 sm:w-[330px] text-center sm:text-2xl">
-                                <div className="btn__bg bg-transparent">
-                                    <span className="btn__bg__layer bg-transparent btn__bg__layer-first"></span>
-                                    <span className="btn__bg__layer bg-transparent btn__bg__layer-second"></span>
-                                    <span className="btn__bg__layer bg-transparent btn__bg__layer-third"></span>
-                                </div>
-                                <span className="btn__text-out text-white font-glancyrLight">INFO@ICYSTUDIO.CO</span>
-                                <span className="btn__text-in text-white font-glancyrLight">INFO@ICYSTUDIO.CO</span>
-                            </button> */}
-
                     </div>
 
-                    <div className=' flex flex-col items-center justify-center w-[50%] gap-10 h-full '>
+                    <div className=' flex flex-col items-center justify-center w-[50%] sm:gap-10 gap-6 h-full '>
 
-                        <h1 className=' font-stretchPro text-center text-8xl text-white box-shadow-footer'>
+                        <h1 className=' font-stretchPro text-center text-5xl sm:text-8xl text-white box-shadow-footer'>
                         HAVEE
                         ANNN
                         IDEEA?
                         </h1>
 
-                        <button className=" btn border-none bg-transparent h-8 w-48 text-base sm:h-20 sm:w-[350px] text-center sm:text-5xl">
+                        <button className=" btn border-none bg-transparent h-12 w-48 sm:h-20 sm:w-[350px] text-center text-2xl sm:text-5xl">
                                 <div className=" btn__bg  border-[2px] box-shadow-footer border-white bg-transparent">
                                     <span className="btn__bg__layer bg-transparent btn__bg__layer-first"></span>
                                     <span className="btn__bg__layer bg-transparent btn__bg__layer-second"></span>
@@ -136,8 +115,8 @@ export const Footer = () => {
 
             </div>
 
-            <div className=' flex p-20 w-full '>
-                <div className='w-[25%] flex flex-col  gap-14'>
+            <div className=' flex flex-col gap-10 sm:flex-row p-5 sm:p-20 w-full '>
+                <div className='sm:w-[25%] flex flex-col gap-10 sm:gap-14'>
                     <div className='flex gap-1'>
                         <div>
                             <img src={logo.src} alt='logo' className='min-w-10 min-h-10 mb-1'></img>
@@ -146,49 +125,49 @@ export const Footer = () => {
                         <img src={decoration.src} alt='decoration' className='max-w-20 max-h-20 rotate-[135deg]'></img>                    
                     </div>
 
-                    <div className='flex gap-4 '>
+                    <div className='flex gap-4 size-2 h-auto sm:size-4  '>
                         
                        
                          <SocialMediaButton href='#' >
-                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                             <svg xmlns="http://www.w3.org/2000/svg" className=' size-6 sm:size-8' viewBox="0 0 24 24">
                                  <path fill="#B3E823" d="M13.355 22v-9.123h3.062l.459-3.555h-3.52v-2.27c0-1.03.285-1.731 1.761-1.731L17 5.32V2.14A25.233 25.233 0 0 0 14.257 2c-2.715 0-4.573 1.657-4.573 4.7v2.622h-3.07v3.555h3.07V22z" />
                              </svg>
                          </SocialMediaButton>
                       
 
                         <SocialMediaButton href='#' >
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                            <svg xmlns="http://www.w3.org/2000/svg" className=' size-6 sm:size-8'  viewBox="0 0 24 24">
                                 <path fill="#B3E823" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3" />
                             </svg>
                         </SocialMediaButton>
 
                         <SocialMediaButton href='#' >
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32"      height="32" viewBox="0 0 24 24">
+                            <svg xmlns="http://www.w3.org/2000/svg" className=' size-6 sm:size-8' viewBox="0 0 24 24">
                                 <path fill="#B3E823" d="M6.94 5a2 2 0 1 1-4-.002a2 2 0 0 1 4 .002M7 8.48H3V21h4zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91z" />
                             </svg>
                         </SocialMediaButton>
 
                         <SocialMediaButton href='#' >
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                            <svg xmlns="http://www.w3.org/2000/svg" className=' size-6 sm:size-8' viewBox="0 0 24 24">
                                 <path fill="#B3E823" d="M22.46 6c-.77.35-1.6.58-2.46.69c.88-.53 1.56-1.37 1.88-2.38c-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29c0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15c0 1.49.75 2.81 1.91 3.56c-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.2 4.2 0 0 1-1.93.07a4.28 4.28 0 0 0 4 2.98a8.52 8.52 0 0 1-5.33 1.84q-.51 0-1.02-.06C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56c.84-.6 1.56-1.36 2.14-2.23" />
                             </svg>
                         </SocialMediaButton>
 
                         <SocialMediaButton href='#' >
-                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                             <svg xmlns="http://www.w3.org/2000/svg" className=' size-6 sm:size-8' viewBox="0 0 24 24">
                             <path fill="#B3E823" d="M7.443 5.35c.639 0 1.23.05 1.77.198c.541.099.984.297 1.377.544c.394.247.689.594.885 1.039c.197.445.296.99.296 1.583c0 .693-.148 1.286-.492 1.731c-.295.446-.787.841-1.377 1.138c.836.248 1.475.693 1.869 1.286c.393.594.639 1.336.639 2.177c0 .693-.148 1.286-.394 1.781c-.245.495-.639.94-1.082 1.237a5.078 5.078 0 0 1-1.573.692c-.59.149-1.18.248-1.77.248H1V5.35zm-.394 5.54c.541 0 .984-.148 1.328-.395c.344-.247.492-.693.492-1.237c0-.297-.05-.594-.148-.791c-.098-.198-.246-.347-.442-.495a2.415 2.415 0 0 0-.64-.247c-.246-.05-.491-.05-.787-.05H4v3.216zm.148 5.838c.295 0 .59-.05.836-.099c.246-.05.492-.148.688-.297a1.76 1.76 0 0 0 .492-.544c.098-.247.197-.544.197-.89c0-.693-.197-1.188-.59-1.534c-.394-.297-.935-.445-1.574-.445H4v3.81zm9.492-.05c.393.396.983.594 1.77.594c.541 0 1.033-.148 1.426-.395c.394-.297.64-.594.738-.891h2.41c-.394 1.187-.984 2.028-1.77 2.572c-.788.495-1.722.792-2.853.792a5.751 5.751 0 0 1-2.115-.396a3.928 3.928 0 0 1-1.574-1.088a3.93 3.93 0 0 1-.983-1.633c-.246-.643-.345-1.335-.345-2.127c0-.742.099-1.434.345-2.078a5.34 5.34 0 0 1 1.033-1.682c.442-.445.983-.84 1.573-1.088a5.49 5.49 0 0 1 2.066-.396c.836 0 1.574.149 2.213.495c.64.346 1.131.742 1.524 1.336c.394.544.69 1.187.886 1.88c.098.692.147 1.385.098 2.176H16c0 .792.295 1.534.689 1.93m3.098-5.194c-.344-.346-.885-.544-1.525-.544a2.34 2.34 0 0 0-1.082.247c-.295.149-.491.347-.688.545a1.322 1.322 0 0 0-.344.692c-.05.248-.099.445-.099.643h4.426c-.098-.742-.344-1.236-.688-1.583M15.459 6.29h5.508v1.336H15.46z" />
                         </svg>
                         </SocialMediaButton>
 
                         <SocialMediaButton href='#' >
-                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                             <svg xmlns="http://www.w3.org/2000/svg" className=' size-6 sm:size-8'  viewBox="0 0 24 24">
                                 <path fill="#B3E823" d="m10 15l5.19-3L10 9zm11.56-7.83c.13.47.22 1.1.28 1.9c.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83c-.25.9-.83 1.48-1.73 1.73c-.47.13-1.33.22-2.65.28c-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44c-.9-.25-1.48-.83-1.73-1.73c-.13-.47-.22-1.1-.28-1.9c-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83c.25-.9.83-1.48 1.73-1.73c.47-.13 1.33-.22 2.65-.28c1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44c.9.25 1.48.83 1.73 1.73" />
                             </svg>
                         </SocialMediaButton>
 
                     </div>
 
-                    <div className='flex flex-col gap-4'>
+                    <div className='flex flex-col gap-4 '>
                         <p className=' font-glancyrThin text-xs'>
                         All company names, brand names, trademarks, logos, illustrations, videos and any other intellectual property (Intellectual Property) published on this website are the property of their respective owners. Any non-authorized usage of Intellectual Property is strictly prohibited and any violation will be prosecuted under the law.
                         </p>
@@ -207,7 +186,8 @@ export const Footer = () => {
                          </div>
                        </div>
                             <div className='flex gap-4 items-center'>
-                                <input type='text' placeholder='YOUR EMAIL' className=' p-4 max-w-[200px] max-h-[50px] font-glancyrThin text-xs rounded-full outline outline-2 outline-neon-green bg-transparent'>
+                                <input type='text' placeholder='YOUR EMAIL' className=' p-4 
+                                 sm:max-w-[200px]  sm:max-h-[50px] font-glancyrThin text-xs rounded-full outline outline-2 outline-neon-green bg-transparent'>
                                 </input>
                                 {/* <a href='#'>
                                     <img src={sendArrow.src} alt='sendArrow' className='w-[60px] h-[55px]'></img>
@@ -220,11 +200,10 @@ export const Footer = () => {
                             </div>
                     </div>
                 </div>
-                <div className='w-[50%] flex items-end justify-center'>
-                    <img src={animation.src} alt='animation' className='w-[500px]'></img>
+                <div className='w-[50%] hidden sm:flex items-end justify-center'>
                 </div>
-                <div className='w-[25%] flex items-end justify-center flex-col '>
-                <button className="btn border-none h-8 w-48 text-base sm:h-16 sm:w-[330px] text-center sm:text-4xl">
+                <div className='sm:w-[25%] gap-5 flex items-start justify-center flex-col'>
+                <button className="btn border-none h-8 w-48 text-base sm:h-16 sm:w-[216px] text-center sm:text-2xl">
                                 <div className="btn__bg">
                                     <span className="btn__bg__layer btn__bg__layer-first"></span>
                                     <span className="btn__bg__layer btn__bg__layer-second"></span>
@@ -233,7 +212,7 @@ export const Footer = () => {
                                 <span className="btn__text-out text-white font-glancyrLight">+1 222 222 222</span>
                                 <span className="btn__text-in text-white font-glancyrLight">+1 222 222 222</span>
                             </button>
-                <button className="btn border-none h-8 w-48 text-base sm:h-16 sm:w-[430px] text-center sm:text-4xl">
+                <button className="btn border-none h-8 w-48 text-xs sm:h-16 sm:w-[300px] text-center sm:text-2xl">
                                 <div className="btn__bg" >
                                     <span className="btn__bg__layer btn__bg__layer-first"></span>
                                     <span className="btn__bg__layer btn__bg__layer-second"></span>
@@ -242,7 +221,7 @@ export const Footer = () => {
                                 <span className="btn__text-out text-white font-glancyrLight">INFO@ICYSTUDIO.CO</span>
                                 <span className="btn__text-in text-white font-glancyrLight">INFO@ICYSTUDIO.CO</span>
                     </button>
-                    <svg width="338" height="338" viewBox="0 0 238 238" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+                    <svg className=' size-[170px] sm:size-[338px]' viewBox="0 0 238 238" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
                 <rect width="238" height="238" fill="url(#pattern0_42_409)"/>
                 <defs>
                 <pattern id="pattern0_42_409" patternContentUnits="objectBoundingBox" width="1" height="1">
@@ -290,7 +269,7 @@ export const FooterLink = ({children, href, title}: FooterLinkProps) => {
         <a href={href}>
             <motion.li 
                 
-                className="border-solid border-b-[1px] border-grey-stroke p-10 pl-20 flex justify-between "
+                className="border-solid border-b-[1px] border-grey-stroke p-6 sm:p-10 pl-10 sm:pl-20 flex justify-between "
                 onHoverStart={() => setHover(true)}
                 onHoverEnd={() => setHover(false)}
                 animate={{
