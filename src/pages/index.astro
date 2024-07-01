@@ -5,25 +5,36 @@ import Hero from '../components/Hero.astro';
 import Work from '../components/Work.astro';
 import Services from '../components/Services.astro';
 import Testimonials from '../components/Testimonials.astro';
-import Test from '../components/Test.astro';
+import { Navbar } from '../components/Navbar.tsx';
+import { Footer } from '../components/Footer.tsx';
+
 
 ---
 
 <Layout title="Icy Studio">
 
+	<!-- Navbar -->
+		<Navbar white client:load />
+
 	<!-- Hero -->
 		<Hero />
 
 	<!-- Work -->
-		<!-- <Work /> -->
+		<Work />
 
 	<!-- Services -->
-		<!-- <Services /> -->
+		<Services />
 
 	<!-- Testimonials -->
-		<!-- <Testimonials /> -->
+		<Testimonials />
+
+	<!-- Footer -->
+		<Footer client:load />
 
 </Layout>
 
 
+<style>
 
+
+</style>

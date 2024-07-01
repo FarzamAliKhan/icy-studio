@@ -205,9 +205,9 @@
 	}
 
 	:root {
-		--color-main: #b3e823;
-		--color-main-second: #8f7cff;
-		--color-main-third: #070707;
+		--color-main: #8f7cff;
+		--color-main-second: #b3e823; 
+		--color-main-third: transparent;
 	  }
 
 	#animation-gradient {
@@ -337,7 +337,7 @@
 	border-radius: 999rem;
 	cursor: pointer;
 	overflow: hidden;
-	background-color: #070707;
+	background-color: transparent;
 }
 .btn:hover .btn__bg {
 	scale: 0.94;

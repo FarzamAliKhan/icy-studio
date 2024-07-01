@@ -1,0 +1,106 @@
+---
+import Layout from "../layouts/Layout.astro"
+import { Navbar } from "../components/Navbar.tsx"
+import  { ContactComp } from "../components/ContactComp.tsx"
+
+
+---
+
+<Layout title="Contact Us" >
+
+    <div class=" h-svh w-svh" data-cursor="pointer">
+            <!-- Navbar -->
+            <Navbar client:load />
+        
+            <!-- <div class="h-auto px-5 pb-10 sm:px-10 sm:pb-0 sm:pt-32 flex flex-col mb-32 ">
+                <button class=" w-[300px] h-[70px] text-4xl rounded-full font-glancyrRegular bg-transparent outline outline-black outline-1 text-black px-4 py-1">CONTACT US</button>
+            </div>
+        
+            <div class="h-auto px-5 pb-10 sm:px-20 sm:pb-0 flex ">
+                <div class=" flex flex-col w-[60%] ">
+                    <div class="flex items-end gap-5">
+                        <Image class=" mb-5 w-[150px] sm:w-[212px]" src={hi} alt=""/>
+                        <h1 class=" text-black  font-glancyrLight italic text-8xl">
+                            Tell us
+                        </h1>
+                    </div>
+                    <h1 class=" text-black mb-8 font-glancyrLight italic text-8xl">
+                        everything.
+                    </h1>
+                    <div class="mb-16">
+                        <h3 class=" text-black font-glancyrThin text-3xl mb-4">
+                            I'm interested in,
+                        </h3>
+                        <div class="flex gap-3 flex-col w-[65%] ">
+                            <div class="text-left w-full gap-4 flex items-center font-glancyrThin text-xs sm:text-xl">
+                                <button><BlackStyledButton text="WEBSITE" /></button>
+                                <button><BlackStyledButton text="LOGO AND BRANDING" /></button>
+                                <button><BlackStyledButton text="UI/UX DESIGN" /></button>
+                            </div>
+                            <div class="text-left w-full gap-4 flex items-center font-glancyrThin text-xs sm:text-xl ">
+                                <button><BlackStyledButton text="MOTION GRAPHICS" /></button>
+                                <button><BlackStyledButton text="3D GRAPHICS" /></button>
+                                <button><BlackStyledButton text="ML SOLUTIONS" /></button>
+                            </div>
+                            <div class="text-left w-full gap-4 flex font-glancyrThin text-xs sm:text-xl  ">
+                                <button><BlackStyledButton text="DESIGN SOLUTIONS" /></button>
+                                <button><BlackStyledButton text="WEB 3.0 DEVELOPMENT" /></button>
+                                <button><BlackStyledButton text="MARKETING" /></button>
+                            </div>
+                            <div class="text-left w-full gap-4 flex font-glancyrThin text-xs sm:text-xl  ">
+                                <button class="rounded-full w-full font-glancyrThin bg-transparent outline outline-black outline-1 text-black px-4 py-1">OTHER</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <form class="flex flex-col gap-4 mb-10">
+                            <input class="w-[50%] h-[50px] text-black font-glancyrThin text-xs sm:text-xl bg-transparent outline-none border-b border-black " type="text" placeholder="Your Name" />
+                            <input class="w-[50%] h-[50px] text-black font-glancyrThin text-xs sm:text-xl bg-transparent outline-none border-b border-black " type="text" placeholder="Your Email" />
+                            <input class="w-[50%] h-[50px] text-black font-glancyrThin text-xs sm:text-xl bg-transparent outline-none border-b border-black " type="text" placeholder="Tell us about your amazing project" />
+                        </form>
+                        <div>
+                            <h3 class=" text-black font-glancyrThin text-3xl mb-4">
+                                Your Budget (USD)
+                            </h3>
+                            <div class="flex gap-3 flex-col w-[65%] ">
+                                <div class="text-left w-full gap-4 flex items-center font-glancyrThin text-xs sm:text-xl">
+                                    <button><BlackStyledButton text="500-1k" /></button>
+                                    <button><BlackStyledButton text="1k-5k" /></button>
+                                    <button><BlackStyledButton text="5-10k" /></button>
+                                    <button><BlackStyledButton text="10k-20k" /></button>
+                                    <button><BlackStyledButton text="20k-30k" /></button>
+                                </div>
+                                <div class="text-left w-full gap-4 flex items-center font-glancyrThin text-xs sm:text-xl ">
+                                    <button><BlackStyledButton text="30k-40k" /></button>
+                                    <button><BlackStyledButton text="40k-50k" /></button>
+                                    <button><BlackStyledButton text="50k-100k" /></button>
+                                    <button><BlackStyledButton text="100k+" /></button>
+                                </div>
+                            </div>
+                            <div class="flex gap-4">
+                                
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" w-[40%] outline outline-1 outline-black">
+                </div>
+            </div> -->
+
+            <ContactComp client:load />
+
+        
+    </div>
+
+</Layout>
+
+<style>
+
+html {
+		font-family: system-ui, sans-serif;
+		background: #f0f0f0;
+	}
+
+
+</style>

@@ -55,63 +55,91 @@ export const Menu = (
     
     return (
         <motion.div
-            className="flex justify-center origin-top items-center absolute top-0 left-0 w-full h-screen bg-black "
+            className="flex justify-center origin-top items-center absolute top-0 left-0 w-full h-svh bg-black "
             variants={menuVars}
             initial= "hidden"
             animate= "visible"
             exit= "exit"
         >
-            <div className='grid h-screen w-full sm:grid-cols-10  '>
-                    {/* First column */}
-                    <div className=" col-span-2  ">
-                        <div className=" grid h-screen sm:grid-rows-6  ">
-                            <div className= " flex p-6 self-center justify-center row-span-1">
-                                <img
-                                    rel='preload'
-                                    className="sm:h-20 md:h-30 h-10 " 
-                                    src={logo2.src}
-                                    alt="icy-studio" >
-                                </img>         
-                            </div>
-                            <section className=" row-span-3 border-solid border-y-2 border-neutral-800 ">
-                                <div className=" p-6 flex justify-start h-full  ">
-                                    <div className=" flex py-4  flex-col">
-                                            <div className='text-3xl mb-4 font-glancyrRegular' >
-                                                 FOLLOW <span className=' text-neon-green' >US</span>
-                                            </div>
-                                            <div className=' text-base font-glancyrThinItalic'>
-                                                <a href='#'>
-                                                    <div className='mb-4' > Instagram </div>
-                                                </a>
-                                                <a href='#'>
-                                                    <div className='mb-4' > Facebook </div>
-                                                </a>
-                                                <a href='#'>
-                                                    <div className='mb-4' > Linkedin </div>
-                                                </a>
-                                                <a href='#'>
-                                                    <div className='mb-4' > Youtube </div>
-                                                </a>
-                                            </div>
-                                     </div>
-                                 </div>
-                            </section>
-                            <div className=" p-6 row-span-2 font-glancyrRegular text-3xl" >
-                                <div className="flex flex-col py-4">
-                                <a href='#'>
-                                    <div className='mb-2' > About Us. </div>
-                                </a>
-                                <a href='#'>
-                                    <div className='mb-2' > FAQ's </div>
-                                </a>
-                                <a href='#'>
-                                    <div className='mb-2' > Privacy Policy </div>
-                                </a>
+            <div className='grid h-screen overflow-hidden w-full grid-cols-1 sm:grid-cols-10  '>
+                {/* First column */}
+                <div className=" col-span-2  ">
+                    <div className=" grid h-screen sm:grid-rows-6  ">
+                        <div className= " flex p-6 self-center justify-center row-span-1">
+                            <img
+                                rel='preload'
+                                className="h-full " 
+                                src={logo2.src}
+                                alt="icy-studio" >
+                            </img>         
+                        </div>
+                        <section className=" row-span-3 border-solid border-y-2 border-neutral-800 ">
+                            <div className=" p-6 flex justify-start h-full  ">
+                                <div className=" flex py-4  flex-col">
+                                        <div className=' text-base md:text-2xl lg:text-3xl mb-4 font-glancyrRegular' >
+                                                FOLLOW <span className=' text-neon-green' >US</span>
+                                        </div>
+                                        <div className='text-xs lg:text-base font-glancyrThinItalic'>
+                                            <a href='#'>
+                                                <motion.div
+                                                whileHover={{ color: '#b3e823'}}
+                                                className='mb-4' > 
+                                                    Instagram 
+                                                </motion.div>
+                                            </a>
+                                            <a href='#'>
+                                            <motion.div
+                                                whileHover={{ color: '#b3e823'}}
+                                                className='mb-4' > 
+                                                    Facebook 
+                                                </motion.div>
+                                            </a>
+                                            <a href='#'>
+                                            <motion.div
+                                                whileHover={{ color: '#b3e823'}}
+                                                className='mb-4' > 
+                                                    Linkedin
+                                                </motion.div>
+                                            </a>
+                                            <a href='#'>
+                                            <motion.div
+                                                whileHover={{ color: '#b3e823'}}
+                                                className='mb-4' > 
+                                                    Youtube
+                                                </motion.div>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
+                        </section>
+                        <div className=" p-6 row-span-2 font-glancyrRegular text-xl md:text-2xl xl:text-3xl" >
+                            <div className="flex flex-col py-4">
+                            <a href='#'>
+                                <motion.div 
+                                    whileHover={{ color: '#b3e823'}}
+                                    className='mb-2' > 
+                                    About Us. 
+                                </motion.div>
+                            </a>
+                            <a href='#'>
+                                <motion.div 
+                                    whileHover={{ color: '#b3e823'}}
+                                    className='mb-2' > 
+                                    FAQ's 
+                                </motion.div>
+                            </a>
+                            <a href='#'>
+                                <motion.div 
+                                    whileHover={{ color: '#b3e823'}}
+                                    className='mb-2' > 
+                                    Privacy Policy
+                                </motion.div>
+                            </a>
                             </div>
                         </div>
                     </div>
-                    {/* Middle column */}
+                </div>
+                {/* Middle column */}
                 <div className="col-span-6">
                     <div className="grid h-screen font-glancyrRegular">
                         <NavLink title='SERVICES' href='#' />
@@ -122,7 +150,7 @@ export const Menu = (
                     </div>
                 </div>
                     {/* Last column */}
-                    <div className="col-span-2 relative">
+                <div className="col-span-2 relative">
                     <div
                         id='animation-gradient'
                         className="absolute inset-0 w-[0.7rem]  "
@@ -132,7 +160,7 @@ export const Menu = (
                             <motion.img
                                 animate={{ rotate: 45 }}
                                 rel='preload'
-                                className="h-12 sm:h-14 md:h-16 m-3"
+                                className="h-8 sm:h-12 md:h-14 m-3"
                                 src={menuClose.src}
                                 alt="Close Menu"
                                 whileHover={{ scale: 0.9, scaleY: 0.9 }}
@@ -142,17 +170,16 @@ export const Menu = (
                         </a>
                     </div>
                     <br />
-                    <div className="flex flex-col p-2 ml-8 align-start">
-                        <div className='text-4xl p-1 font-glancyrRegular'>Get <span className='text-neon-green'>in</span> Touch</div>
-                        <div className='text-base font-glancyrThinItalic p-1'>+1 252 232 29</div>
-                        <div className='text-base font-glancyrThinItalic p-1'>info@icystudio.co</div>
+                    <div className="h-[10%] flex flex-col p-2 ml-8 align-start">
+                        <div className=' text-2xl lg:text-4xl p-1 font-glancyrRegular'>Get <span className='text-neon-green'>in</span> Touch</div>
+                        <div className=' text-xs lg:text-base font-glancyrThinItalic p-1'>+1 252 232 29</div>
+                        <div className='text-xs lg:text-base font-glancyrThinItalic p-1'>info@icystudio.co</div>
                     </div>
                     <div className="h-3/4 flex flex-col justify-end p-6">
                         <div className='flex flex-row justify-end p-4'>
                             <motion.img
-                                animate={{ x: [0, 100, 0] }}
                                 rel='preload'
-                                className="h-16 sm:h-20 md:h-[7rem] m-3"
+                                className="h-4 sm:h-10 md:h-[5rem] xl:h-32 p-2"
                                 src={menu.src}
                                 alt="Globe icon"
                             />
@@ -200,7 +227,7 @@ const NavLink = ({ title, href} : NavLinkProps) => {
         animate={{
             
             color: isHover ? '#000000' : '#ffffff',
-            textShadow: isHover ? '0px 0px 4px #00FF00 ' : 'none'
+            textShadow: isHover ? '0px 0px 4px #b3e823 ' : 'none'
         }}
         variants={navLinkVars}
         transition={{ duration: 0.01 }}
@@ -208,7 +235,7 @@ const NavLink = ({ title, href} : NavLinkProps) => {
         onHoverEnd={() => setHover(false)}
     >
         <a href={href}>
-            <div className='text-8xl px-10'>{title}</div>
+            <div className=' sm:text-4xl md:text-5xl lg:text-7xl 2xl:text-8xl px-10'>{title}</div>
         </a>
     </motion.div>
     );

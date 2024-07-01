@@ -40,16 +40,9 @@ const { title } = Astro.props;
 	<body >
 				<div id="cursor"></div>
 				<div id="cursor-border"></div>
-            <!-- Header -->
-            	<Navbar client:load />		
             
             <!--Content -->
                 <slot></slot>
-				
-            <!-- Footer -->
-				<Footer client:load />
-
-				
 
 
 	</body>
