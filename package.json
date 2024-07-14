@@ -33,6 +33,9 @@
     "typescript": "^5.4.2"
   },
   "devDependencies": {
-    "sass": "^1.72.0"
+    "@svgr/core": "^8.1.0",
+    "@svgr/plugin-jsx": "^8.1.0",
+    "sass": "^1.72.0",
+    "vite-plugin-svgr": "^4.2.0"
   }
 }

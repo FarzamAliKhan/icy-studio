@@ -1,8 +1,13 @@
 import hi from '../images/hi.svg';
 import { useState } from 'react';
-import paperclip from '../images/paperclip.svg';
-import arrow from '../images/arrow-button.svg';
+
+import logo from '../images/logo-with-a-dot.png';
+import decoration from '../images/9(WHITE).png';
+
+
 import {  motion } from 'framer-motion';
+import ArrowButton, { Behance, Facebook, Instagram, Linkedin, Twitter, Youtube } from './hooks/Svgs';
+import { SocialMediaButton } from './Footer';
 
 
 type Interest = "WEBSITE" | "LOGO AND BRANDING" | "UI/UX DESIGN" | "MOTION GRAPHICS" | "3D GRAPHICS" | "ML SOLUTIONS" | "DESIGN SOLUTIONS" | "WEB 3.0 DEVELOPMENT" | "MARKETING" | "OTHER";
@@ -16,13 +21,12 @@ export const ContactComp = () => {
 
   const handleInterestClick = (value: Interest) => {
     setSelectedInterests(prevInterests => {
-      if (prevInterests.includes(value)) {
-        console.log(`Unselecting: ${value}`);
-        return prevInterests.filter(item => item !== value);
-      } else {
+      if (!prevInterests.includes(value)) {
         console.log(`Selecting: ${value}`);
-        return [...prevInterests, value];
+        return [...prevInterests, value]; // Add the interest if it's not already selected
       }
+      return prevInterests
+      // return prevInterests.filter((item)=>{item !== value}); // If already selected, return previous state unchanged
     });
   };
 
@@ -79,7 +83,7 @@ export const ContactComp = () => {
           CONTACT US
         </button>
       </div>
-      <div className="h-auto px-5 pb-10 sm:px-20 sm:pb-0 flex">
+      <div className="h-auto px-5 pb-10 sm:px-24 sm:pb-0 flex">
         <div className="flex flex-col w-[60%]">
           <div className="flex items-end gap-5">
             <img className="mb-5 w-[150px] sm:w-[212px]" src={hi.src} alt="" />
@@ -92,12 +96,6 @@ export const ContactComp = () => {
               <div className="flex gap-3 flex-col w-[65%]">
                 <div className="text-left w-full gap-4 flex items-center font-glancyrThin text-xs sm:text-xl">
                   <input type="checkbox" name="botcheck" id="" hidden/>
-
-                  <label>
-                    <input type="checkbox" name="Interests" value="Wd"  />
-                    <input type="checkbox" name="Interests" value="WEITE"  />
-                    <input type="checkbox" name="Interests" value="WETE"  />
-                  </label>
                   <label onClick={() => handleInterestClick("WEBSITE")}>
                     <input type="checkbox" name="Interests" value="WEBSITE" hidden />
                     <BlackStyledButton text="WEBSITE" selected={isSelected("WEBSITE", 'interest')} />
@@ -139,13 +137,13 @@ export const ContactComp = () => {
                     <BlackStyledButton text="MARKETING" selected={isSelected("MARKETING", 'interest')} />
                   </label>
                 </div>
-                <div className="text-left w-full gap-4 flex font-glancyrThin text-xs sm:text-xl">
-                    <label className='w-full'  >
-                      <input onChange={() => handleInterestClick("OTHER")} type="checkbox" name="Interests" value="OTHER" hidden />
+                <div className="text-center w-full gap-4 flex font-glancyrThin text-xs sm:text-xl">
+                    <label onClick={() => handleInterestClick("OTHER")} className='w-full '  >
+                      <input type="checkbox" name="Interests" value="OTHER" hidden />
                       <motion.div
-                        whileHover={{ color: '#b3e823', backgroundColor: '#070707', scale: 1.02 }}
-                        className={`rounded-full w-full font-glancyrThin  outline
-                          outline-black outline-1  px-4 py-1 ${isSelected("OTHER", 'interest') ? 'text-[#b3e823] bg-[#070707]' : 'bg-transparent text-black'}`}>
+                        whileHover={{ scale: 1.02, }}
+                        transition ={{duration: 0.1, yoyo: Infinity}}
+                        className={`rounded-full w-full font-glancyrThin  px-4 py-1 ${isSelected("OTHER", 'interest') ? 'text-[#f7f7f7] bg-[#070707] outline outline-[#b3e823] outline-2' : 'bg-transparent text-black outline outline-1 outline-black  '}`}>
                         OTHER
                       </motion.div>
                     </label>
@@ -222,13 +220,85 @@ export const ContactComp = () => {
               </div>
             </div>
           </form>
+
+          <div className=' flex flex-col gap-10 sm:flex-row sm:mb-28 w-full text-black '>
+                <div className='sm:w-[50%] flex flex-col gap-10 sm:gap-14'>
+                    <div className='flex gap-1'>
+                        <div>
+                            <img src={logo.src} alt='logo' className='min-w-10 min-h-10 mb-1'></img>
+                            <h2 className=' font-glancyrThin text-xs'>By <span className=' font-glancyrMediumItalic'>ICY STUDIOS.</span></h2>
+                        </div>
+                        <img src={decoration.src} alt='decoration' className='max-w-20 max-h-20 rotate-[135deg]'></img>                    
+                    </div>
+
+                    <div className='flex gap-4 size-2 h-auto sm:size-4  '>
+                       
+                        <SocialMediaButton href='#' >
+                            <Facebook isHover/>
+                        </SocialMediaButton>
+                      
+                        <SocialMediaButton href='#' >
+                            <Instagram isHover/>
+                        </SocialMediaButton>
+
+                        <SocialMediaButton href='#' >
+                            <Linkedin isHover/>
+                        </SocialMediaButton>
+
+                        <SocialMediaButton href='#' >
+                            <Twitter isHover/>
+                        </SocialMediaButton>
+
+                        <SocialMediaButton href='#' >
+                            <Behance isHover/>
+                        </SocialMediaButton>
+
+                        <SocialMediaButton href='#' >
+                            <Youtube isHover/>
+                        </SocialMediaButton>
+
+                    </div>
+
+                    <div className='flex flex-col gap-4 '>
+                        <p className=' font-glancyrThin text-xs'>
+                        All company names, brand names, trademarks, logos, illustrations, videos and any other intellectual property (Intellectual Property) published on this website are the property of their respective owners. Any non-authorized usage of Intellectual Property is strictly prohibited and any violation will be prosecuted under the law.
+                        </p>
+
+                       <div className='mb-4'>
+                         <p className=' font-glancyrThin text-xs'>
+                         © 2024 ICYSTUDIO Ltd dba Icy Studios. All rights reserved.
+                         </p>
+                         <div className='flex justify-between font-glancyrThin text-xs'>
+                             <a href='#'>
+                                 Privacy Policy
+                             </a>
+                             <a href='#'>
+                                 Cookies Policy
+                             </a>
+                         </div>
+                       </div>
+                            <div className='flex gap-4 items-center'>
+                                <input type='text' placeholder='YOUR EMAIL' className=' p-4 
+                                 sm:max-w-[200px]  sm:max-h-[50px] font-glancyrThin text-xs rounded-full outline outline-2 outline-neon-green bg-transparent'>
+                                </input>
+                                
+                                <motion.button 
+                                
+                                whileHover={{ scale: 1.15, color: '#ee4140' }}
+                                className="pl-1 rounded-full size-12 overflow-hidden object-cover bg-neon-green" >
+                                    <ArrowButton/>
+                                </motion.button>
+                            </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div className="w-[40%] outline outline-1 outline-black"></div>
+        <div className="w-[40%] "></div>
       </div>
       {showOverlay && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
           <div className="bg-white text-black p-10 rounded-lg">
-            <h2 className="text-2xl mb-4">Your Response has been saved</h2>
+            <h2 className="text-2xl mb-4">Your response has been sent</h2>
             <p>We will be contacting shortly</p>
             <button onClick={closeOverlay} className="mt-4 px-4 py-2 bg-black text-white rounded">
               Close
@@ -251,9 +321,9 @@ type BlackStyledButtonProps = {
   return (
 
     <motion.div
-      whileHover={{ outlineColor: '#070707', outlineWidth: '2px', scale: 1.02 }}
-      className={` ${selected ? 'rounded-full font-glancyrThin outline outline-[#b3e823] outline-3 px-4 py-1 text-[#b3e823] bg-[#070707] outline-green' : 'rounded-full font-glancyrThin bg-transparent outline outline-black outline-1 text-black px-4 py-1'}`}
-    
+      whileHover={{ scale: 1.1, }}
+      className={` ${selected ? 'rounded-full font-glancyrThin outline outline-[#b3e823] outline-2 px-4 py-1 text-[#f7f7f7] bg-[#070707] ' : 'rounded-full font-glancyrThin bg-transparent outline outline-black outline-1 text-black px-4 py-1'}`}
+      transition ={{duration: 0.1, yoyo: Infinity}}
     >
       {text}
     </motion.div>
