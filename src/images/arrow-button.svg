@@ -1,0 +1,35 @@
+<svg width="60" height="40" viewBox="0 0 60 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Frame" clip-path="url(#clip0_453_1468)">
+<g id="Clip path group">
+<mask id="mask0_453_1468" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="60" height="40">
+<g id="__lottie_element_775">
+<path id="Vector" d="M60 0H0V40H60V0Z" fill="white"/>
+</g>
+</mask>
+<g mask="url(#mask0_453_1468)">
+<g id="Group">
+<g id="Group_2">
+<g id="Group_3">
+<path id="Vector_2" d="M42.2621 21.1396C36.1897 21.1163 31.2485 26.0197 31.2255 32.0917" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+</g>
+</g>
+<g id="Group_4">
+<g id="Group_5">
+<path id="Vector_3" d="M42.2621 21.1393C36.1899 21.1624 31.2487 16.2587 31.2256 10.1865" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+</g>
+</g>
+<g id="Group_6">
+<g id="Group_7">
+<path id="Vector_4" d="M42.0579 21.1376H9.5166" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_453_1468">
+<rect width="60" height="40" fill="white"/>
+</clipPath>
+</defs>
+</svg>
