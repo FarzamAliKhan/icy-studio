@@ -1,5 +1,7 @@
 import hi from '../images/hi.svg';
 import { useState } from 'react';
+import Lottie from '@lottielab/lottie-player/react';
+
 
 import logo from '../images/logo-with-a-dot.png';
 import decoration from '../images/9(WHITE).png';
@@ -14,6 +16,10 @@ type Interest = "WEBSITE" | "LOGO AND BRANDING" | "UI/UX DESIGN" | "MOTION GRAPH
 type Budget = "500-1k" | "1k-5k" | "5-10k" | "10k-20k" | "20k-30k" | "30k-40k" | "40k-50k" | "50k-100k" | "100k+";
 
 export const ContactComp = () => {
+
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [description, setDescription] = useState('');
 
   const [selectedInterests, setSelectedInterests] = useState<Interest[]>([]);
   const [selectedBudget, setSelectedBudget] = useState<Budget | "">("");
@@ -31,6 +37,7 @@ export const ContactComp = () => {
   };
 
 
+
   const handleBudgetClick = (value: Budget) => {
       setSelectedBudget(value);
   };
@@ -43,6 +50,33 @@ export const ContactComp = () => {
       }
   };
 
+  const onSubmitNodeMailer = async (event: any) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+
+    formData.append("Interests", selectedInterests.join(", "));
+
+
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    console.log('json: ',json);
+
+    const res = await fetch("http://localhost:3000/send-email", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json"
+        },
+        body: json
+    }).then((res) => res.json());
+
+    if (res.success) {
+        setShowOverlay(true); // Show overlay on success
+    }
+
+  }
+
   const onSubmit = async (event: any) => {
       event.preventDefault();
       const formData = new FormData(event.target);
@@ -53,6 +87,8 @@ export const ContactComp = () => {
 
       const object = Object.fromEntries(formData);
       const json = JSON.stringify(object);
+
+      console.log('json: ',json);
 
       const res = await fetch("https://api.web3forms.com/submit", {
           method: "POST",
@@ -90,7 +126,7 @@ export const ContactComp = () => {
             <h1 className="text-black font-glancyrLight italic text-8xl">Tell us</h1>
           </div>
           <h1 className="text-black mb-8 font-glancyrLight italic text-8xl">everything.</h1>
-          <form className="flex flex-col gap-4 mb-10" onSubmit={onSubmit}>
+          <form className="flex flex-col gap-4 mb-10" onSubmit={onSubmitNodeMailer}>
             <div className="mb-16">
               <h3 className="text-black font-glancyrThin text-3xl mb-4">I'm interested in,</h3>
               <div className="flex gap-3 flex-col w-[65%]">
@@ -150,9 +186,9 @@ export const ContactComp = () => {
                 </div>
               </div>
             </div>
-            <input className="w-[50%] h-[50px] text-black font-glancyrThin text-xs sm:text-xl bg-transparent outline-none border-b border-black" required type="text" name='Name' placeholder="Your Name" />
-            <input className="w-[50%] h-[50px] text-black font-glancyrThin text-xs sm:text-xl bg-transparent outline-none border-b border-black" required type="email" name='Email' placeholder="Your Email" />
-            <textarea className="w-[50%] h-[50px] text-black font-glancyrThin text-xs sm:text-xl bg-transparent outline-none border-b border-black" required name='Description' placeholder="Tell us about your amazing project" />
+            <input className="w-[50%] h-[50px] text-black font-glancyrThin text-xs sm:text-xl bg-transparent outline-none border-b border-black" required type="text" name='Name'  placeholder="Your Name" />
+            <input className="w-[50%] h-[50px] text-black font-glancyrThin text-xs sm:text-xl bg-transparent outline-none border-b border-black" required type="email" name='Email'  placeholder="Your Email" />
+            <textarea className="w-[50%] h-[50px] text-black font-glancyrThin text-xs sm:text-xl bg-transparent outline-none border-b border-black" required name='Description'  placeholder="Tell us about your amazing project" />
             <div className='pt-10 '>
               <h3 className="text-black font-glancyrThin text-3xl mb-4">Your Budget (USD)</h3>
               <div className="flex gap-3 mb-8 flex-col w-[65%]">
@@ -293,7 +329,11 @@ export const ContactComp = () => {
                 </div>
             </div>
         </div>
-        <div className="w-[40%] "></div>
+        <div className="w-[40%] ">
+          <Lottie src="src/assets/videos/form-lady.json" style={{  }} autoplay />
+          <Lottie src="src/assets/videos/form-lady.json" style={{ rotate: '180deg', opacity: 0.3 }} autoplay />
+
+        </div>
       </div>
       {showOverlay && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
