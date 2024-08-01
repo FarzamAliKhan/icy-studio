@@ -1,4 +1,5 @@
 <h1 align="center">❄️ ICY-STUDIO CREATIVE PORTFOLIO WEBSITE </h1>
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 ### TECH STACK 💻
 
