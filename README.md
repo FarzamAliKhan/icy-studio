@@ -1,12 +1,11 @@
-## ❄️ ICY-STUDIO PORTFOLIO WEBSITE
-### TECH STACK: Astro Framework, React, Tailwind, Framer Motion, GSAP, Node, Express, Nodemailer
+<h1 align="center">❄️ ICY-STUDIO CREATIVE PORTFOLIO WEBSITE </h1>
+
+### TECH STACK 💻
+
+> Astro Framework, React, Tailwind, Framer Motion, GSAP, Node, Express, Nodemailer
 
 
 ## 🚧 DEMO (UNDER CONSTRUCTION)
-
-
-
-https://github.com/user-attachments/assets/980e6ebf-6852-4ea0-a66e-eb5832cd25de
 
 
 
